@@ -1,0 +1,180 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
+@import url("https://fonts.googleapis.com/css?family=Merienda");
+
+/*phone*/
+@media all and (max-width: 480px) { 
+  #nav li { flex-basis: 100%; } 
+  #nav { flex-basis: 50%; } 
+  }
+
+/*tablet*/
+@media all and (max-width: 1000px) { 
+  #nav ul { flex-wrap: wrap; }
+  #nav li { flex: 1 1 50%; } 
+  #nav { flex: 1 1 33.33%; } 
+
+  #content {
+    text-align: center;
+  }
+  body {
+    width: 90%;
+  }
+  #highlight1, #highlight2 #businessOwner, #new {
+    display: block;
+    margin: auto;
+  }
+  }
+
+/*Navigation*/
+#nav {
+    line-height: 3.3em;
+    font-size: 1.5em;
+    transition: top 0.3s;
+    background-color: #638492;
+    box-shadow: 1px 1px 10px 1px #0A0B0A;
+  }
+  
+  #nav a {
+    padding: 1em;
+    color:#8EC2F5;
+    text-decoration: none;
+    font-family: "Merienda", cursive;
+    font-weight: bold;
+  }
+  
+  #nav ul {
+    list-style-type: none;
+    display: flex; 
+  }
+  #nav li {
+    flex: auto;
+  }
+  #nav a:hover {
+    color:#D6EAFF;
+    background-color:#8EC2F5;
+    opacity: 0.8;
+  }
+
+  /*main-basic styling*/
+  body {
+    background-color:#D6EAFF ;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  #content {
+    background-color:#FAFAFF;
+  }
+  
+  main {
+    background-color:#FAFAFF ;
+    padding: 1em;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: "Merienda", cursive;
+    color: #638492;
+    padding: 0.5em;
+  }
+  
+  p {
+    color:#0A0B0A;
+    font-family: "Merriweather", cursive;
+    padding: 0.5em;
+    max-width: 1000px;
+  }
+  
+  a {
+    color:#0A0B0A;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: #638492;
+  }
+
+  footer {
+    background-color:#638492;
+    padding: 1em;
+    box-shadow: 1px 1px 10px 1px #0A0B0A;
+  }
+
+  footer a {
+      color: #D6EAFF;
+      text-decoration: none;
+  }
+
+  footer a:hover {
+      text-decoration: underline;
+  }
+
+/*Target Audience*/
+#business{
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 1em 1em; 
+  grid-template-areas: 
+    "businessOwner new"; 
+}
+
+#business, #hh p {
+  width: 80%;
+  font-family: "Merriweather", cursive;
+}
+
+#businessOwner { grid-area: business; }
+#new { grid-area: new; }
+
+/*Color Scheme*/
+#primary {
+  color: #0A0B0A;
+  background-color: #D6EAFF;
+  padding: 1em;
+  border: solid;
+  border-color: #0A0B0A;
+}
+
+#secondary {
+    color: #0A0B0A;
+    background-color: #FAFAFF;
+    padding: 1em;
+    border: solid;
+    border-color: #0A0B0A; 
+}
+
+#hh {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 1em 1em; 
+  grid-template-areas: 
+    "highlight1 highlight2"; 
+}
+
+#highlight1 {
+    color: #0A0B0A;
+    background-color: #638492;
+    padding: 1em;
+    border: solid;
+    border-color: #0A0B0A; 
+    grid-area: highlight1; 
+}
+
+#highlight2 {
+  color: #0A0B0A;
+  background-color: #8EC2F5;
+  padding: 1em;
+  border: solid;
+  border-color: #0A0B0A; 
+  grid-area: highlight2; 
+}
+
+#text {
+  color:#FAFAFF;
+  background-color: #0A0B0A;
+  border:solid;
+  border-color: #0A0B0A;
+  padding: 1em;
+}

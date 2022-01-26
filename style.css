@@ -1,0 +1,98 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
+@import url("https://fonts.googleapis.com/css?family=Merienda");
+
+/* Logo
+
+#logo {
+  z-index: +4;
+  height: 120px;
+  padding-bottom: 2em;
+}
+.logo-box {
+  height: 6em;
+  background-color: #28262C;
+}
+*/
+/*Top*/
+#top {
+background-color: #7081EB;
+max-width: 1000px;
+display: flex;
+}
+
+#me {
+    width: 300px;
+    border-style: ridge;
+    border-width: 1em;
+    border-color: #D4C2FC;
+}
+
+/*Navigation*/
+#nav {
+  line-height: 3em;
+  font-size: 1.2em;
+  transition: top 0.3s;
+  background-color: #FEFFFE;
+}
+
+#nav a {
+  padding: 1em;
+  color: #6B5CAD;
+  text-decoration: none;
+}
+
+#nav ul {
+  list-style-type: circle;
+  margin: 0
+}
+
+#nav a:hover {
+  color: #D4C2FC;
+  text-decoration: underline;
+}
+
+
+/*Main*/
+body {
+  background-color: #28262C;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+
+main {
+  background-color: #FEFFFE;
+  padding: 1em;
+}
+
+h1 {
+  background-color: #7081EB;
+  color: #FEFFFE;
+  font-family: "Merienda", cursive;
+  padding: 0.5em;
+ 
+}
+
+h2,h3 {
+  font-family: "Merienda", cursive;
+  color: #D4C2FC;
+  padding-bottom: 1em;
+}
+h4 {
+font-family: "Merienda", cursive;
+color: #FEFFFE;
+}
+
+p {
+  color: #28262C;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*footer*/
+footer {
+  background-color: #7081EB;
+
+}
