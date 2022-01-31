@@ -3,15 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CC site plan</title>
+    <title>CC</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
   </head>
   <body>
   <header>
-      <div id="nav" class="top">
-      <nav>
+      <div id="logoBox">
+        <img src="imgs/logo.png" alt="logo" class="mainLogo">
+        <a href="https://www.facebook.com/" target="_blank"><img src="imgs/fb.png" alt="face book logo" class="logo"></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img src="imgs/linkedIn.png" alt="linkedIn logo" class="logo"></a>
+      <nav id="nav" class="top">
           <ul>
-            <li><a class="hamburger" href="javascript:void(0);" onclick="mobileNav()">&#9776;</a></li>
+            <li><a href="javascript:void(0);" class="hamburger" onclick="mobileNav()">&#9776;</a></li>
             <li><a class="active" href="#">Home</a></li>
             <li><a href="#">Discover</a></li>
             <li><a href="#">Directory</a></li>
@@ -19,23 +25,133 @@
             <li><a href="#">Contact</a></li>
           </ul>
       </nav>
+      
     </div>
   </header>
   <div id="content">
    
     <main>
-        <h1>Chamber of Commerce</h1>
-        
-  
       
+
+        <div class="container">
+
+          <div class="spotlight1">
+            <h2>spotlight1</h2>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+          </ul>
+          </div>
+          
+          <div class="spotlight2">
+            <h2>Spotlight2</h2>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+          </ul>
+          </div>
+
+          <div class="spotlight3">
+            <h2>spotlight3</h2>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+          </ul>
+          </div>
+
+          <div class="event">
+            <h2>event</h2>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+          </ul>
+          </div>
+
+          <div class="weather">
+            <h2>weather</h2>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+          </ul>
+          </div>
+
+          <div class="join">
+            <h2>join</h2>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+          </ul>
+          </div>
+
+          <div class="hero">
+            <h2>hero</h2>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+          </ul>
+          </div>
+
+          <div class="news">
+            <h2>news</h2>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+            <li>Space occupier</li>
+          </ul>
+          </div>
+        </div>
+
+      </div>
       </main>
       <footer>
+        <img src="imgs/logo.png" alt="logo" class="mainLogo">
+        <div class="imfo">  
+          <ul>
+          <li>imfoEmailaddress@email.com</li>   
+          <li>x+(xxx)-xxx-xxxx</li>  
+          <li>Location</li>  
+          </ul>
+        </div>
+
+        <div class="update">  
+        </div>
       </footer>
     </div>
     <script>
         function mobileNav() {
-            var x = document.getElementById("nav");
-  if (x.className === "top") {
+            const x = document.getElementById("nav");
+  if (x.className == "top") {
     x.className += " responsive";
   } else {
     x.className = "top";
