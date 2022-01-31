@@ -24,6 +24,7 @@
             <li><a href="#">Join</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
+          <h3 id="date" style="color: #8EC2F5;"></h3>
       </nav>
       
     </div>
@@ -140,7 +141,7 @@
           <ul>
           <li>imfoEmailaddress@email.com</li>   
           <li>x+(xxx)-xxx-xxxx</li>  
-          <li>Location</li>  
+          <li><a href = "https://www.google.com/maps/@43.8104876,-111.7887,14z">Location</a></li>  
           </ul>
         </div>
 
@@ -157,6 +158,9 @@
     x.className = "top";
   }
 }
+const today = new Date();
+const date = today. getFullYear()+'-'+(today. getMonth()+1)+'-'+today. getDate();
+document. getElementById("date").innerHTML = date;
         </script>
     </body>
   </html>
