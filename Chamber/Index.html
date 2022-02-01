@@ -24,9 +24,8 @@
             <li><a href="#">Join</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
-          <h3 id="date" style="color: #8EC2F5; text-align: center;"></h3>
       </nav>
-      
+      <h3 id="date" style="color: #8EC2F5;"></h3>
     </div>
   </header>
   <div id="content">
@@ -158,9 +157,27 @@
     x.className = "top";
   }
 }
-const today = new Date();
-const date = today. getFullYear()+'-'+(today. getMonth()+1)+'-'+today. getDate();
-document. getElementById("date").innerHTML = date;
+        function message() {
+        // Get the input from computer's clock.
+        const now = new Date();
+        let month = now.getMonth();
+        let dayOfMonth = now.getDate();
+        let dayOfWeek = now.getDay();
+        let year = now.getFullYear();
+        let date = dayOfWeek + dayOfMonth + year;
+        // Conditions for sleeping in. 
+        if (
+          dayOfWeek == 1 ||
+          dayOfWeek == 2
+        ) {
+          message = date + <br /> + " Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+        } else {
+          message = date;
+        }
+        // Display message in h3 where id = date
+        document.getElementById('date').innerHTML = message;
+      }
+      
         </script>
     </body>
   </html>

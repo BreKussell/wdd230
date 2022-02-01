@@ -107,3 +107,16 @@ footer {
 .imfo li {
   flex: auto;
 }
+
+.imfo a {
+  font-size: 1.5em;
+  padding: 1em;
+  color:#8EC2F5;
+  text-decoration: none;
+  font-family: "Merienda", cursive;
+  font-weight: bold;
+}
+
+.imfo a:hover {
+  background-color: #8EC2F5;
+}
