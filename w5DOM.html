@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>W5 DOM</title>
+    <link rel="stylesheet" href="DOMstyle.css" />
+  </head>
+
+  <body>
+    <h1>📘 Book of Mormon - Top 25</h1>
+    <main>
+            <div class="input">
+                <label>Enter Book and Chapter<br>
+                    <input type="text" id="chapterInput" placeholder="Alma 5" required></label>
+                <button type="submit" id = "favchap">Add Chapter</button>
+            </div>
+            <div class="listcontainer">
+                <ul id="list">
+                </ul>
+            </div>
+        </main>
+    
+    <script>
+    //Declare Variables
+    let addChap = document.getElementById("favchap");
+    let input = document.getElementById("chapterInput");
+    let ul = document.getElementById("list");
+    let list = document.querySelectorAll('ul>li');
+    
+    
+    
+    function inputLength() {
+        return input.value.length;
+    }
+    
+    function chapterList() {
+    // Delete Button
+      let deleteChapterButton = document.createElement("button");
+      deleteChapterButton.appendChild(document.createTextNode("X"));
+    
+        let li = document.createElement("li");
+        li.appendChild(document.createTextNode(input.value));
+     //append and toggle Chapter List
+        ul.appendChild(li).addEventListener("click", toggleList); 
+        input.value = "";
+     //append "delete button"
+      ul>li.appendChild(deleteChapterButton).addEventListener("click", removeChap);  
+    }
+    
+    
+    function addChapterAfterClick() {
+        if (inputLength() > 0 || inputLength() <= 25) {
+            chapterList();
+        }
+    }
+    addChap.addEventListener("click", addChapterAfterClick);
+    
+    
+    
+    function toggleList() {
+      event.target.classList.toggle("done"); 
+    }
+    
+                          
+    //Delete Button next to chapter
+    
+    for (let i = 0; i <= 25; i++){
+      elements[i].addEventListener("click", removeChap);
+    }
+      
+    function removeChap(){
+    this.parentNode.remove();
+    }    
+    </script>
+    
+    </body>
+    </html>
+    
