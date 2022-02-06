@@ -66,8 +66,8 @@ body{
   padding-bottom: 1em;
 }
 
-.container{
-  background-color: #FAFAFF;
+main{
+  background-color: #D6EAFF;
 }
 
 h1, h2, h3, h4, h5 {
@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5 {
 p {
   color:#0A0B0A;
   font-family: "Merriweather", cursive;
-  padding: 0.5em;
+  padding: 1em;
   max-width: 1000px;
 }
 
@@ -120,3 +120,114 @@ footer {
 .imfo a:hover {
   background-color: #8EC2F5;
 }
+
+/*Sections*/
+
+    .hero { 
+       background-color: #FAFAFF;
+        box-shadow: 1px 1px 10px 1px #0A0B0A;
+        border: double; 
+        border-color: #0A0B0A;
+        text-align: center;
+ }
+ .top-left {
+  position: absolute;
+  z-index: +1;
+}
+#chamber {
+  position: absolute;
+  bottom: 2%;
+  right: 30%;
+  padding: 1em;
+  width: 12%;
+  font-family: "Merienda", cursive;
+  background-color: #8EC2F5;
+  color:#0A0B0A;
+  box-shadow: 1px 1px 10px 1px #0A0B0A;
+  z-index: +1;
+  font-size: 1.1em;
+  border-radius: 0.5em;
+}
+      
+      .news { 
+        background-color: #FAFAFF;
+        box-shadow: 1px 1px 10px 1px #0A0B0A;
+        border: double;  
+        border-color: #0A0B0A;
+        text-align: center;
+ }
+
+       
+      
+      .spotlight1 { 
+        background-color: #FAFAFF;
+        box-shadow: 1px 1px 10px 1px #0A0B0A;
+        border: double; 
+        border-color: #0A0B0A;
+        text-align: center;
+ 
+       }
+      
+      .spotlight2 { 
+        background-color: #FAFAFF;
+        box-shadow: 1px 1px 10px 1px #0A0B0A;
+        border: double; 
+        border-color: #0A0B0A;
+        text-align: center;
+ 
+       }
+      
+      .spotlight3 {
+        background-color: #FAFAFF;
+        box-shadow: 1px 1px 10px 1px #0A0B0A;
+        border: double; 
+        border-color: #0A0B0A;
+        text-align: center;
+ 
+       }
+      
+      .join { 
+        background-color: #FAFAFF;
+        box-shadow: 1px 1px 10px 1px #0A0B0A;
+        border: double;  
+        border-color: #0A0B0A;
+        text-align: center;
+ 
+       }
+#joinButton {
+  width: 100%;
+  margin-top: 0.5em;
+  padding: 1em;
+  font-family: "Merienda", cursive;
+  background-color: #8EC2F5;
+  color:#0A0B0A;
+  box-shadow: 1px 1px 10px 1px #0A0B0A;
+  font-size: 1em;
+}
+
+
+      
+      .event { 
+        background-color: #FAFAFF;
+        box-shadow: 1px 1px 10px 1px #0A0B0A; 
+        border: double;  
+        border-color: #0A0B0A;
+        text-align: center;
+ 
+      }
+      
+      .weather { 
+        background-color: #FAFAFF;
+        box-shadow: 1px 1px 10px 1px #0A0B0A;
+        border: double; 
+        border-color: #0A0B0A;
+        text-align: center;
+ 
+       }
+
+       /*images*/
+       #poc {
+         width: 100%;
+         height: 100%;
+         z-index: -1;
+       }

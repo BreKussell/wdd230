@@ -36,45 +36,4 @@
 }
 }
 
-  /*-------------------------------------------*/
-  
-  .spotlight1 { 
-    border: solid;
-    border-color: #0A0B0A; 
-  
-  }
-  
-  .spotlight2 { 
-    border: solid; 
-  border-color: #0A0B0A
-  ;}
-  
-  .spotlight3 { 
-    border: solid; 
-  border-color: #0A0B0A;
-}
-  
-  .event {
-     border: solid; 
-    border-color: #0A0B0A;
-  }
-  
-  .weather { 
-    border: solid; 
-  border-color: #0A0B0A;
-}
-  
-  .join { 
-    border: solid; 
-  border-color: #0A0B0A;
-}
-  
-  .hero { 
-    border: solid; 
-  border-color: #0A0B0A;
-}
-  
-  .news { 
-    border: solid; 
-  border-color: #0A0B0A;
-}
+

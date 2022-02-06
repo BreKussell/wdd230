@@ -44,35 +44,30 @@
       .weather { grid-area: weather; }
 
 
-     footer{ display: grid; 
-      grid-auto-columns: 1fr; 
-      grid-template-columns: 1fr 1fr; 
-      grid-template-rows: 1fr 1fr; 
-      gap: 1em 1em; 
-      grid-template-areas: 
-        "mainLogo imfo"
-        "update update"; 
-    }
-    .mainLogo { grid-area: mainLogo; }
-    .imfo { grid-area: imfo; }
-    .update { grid-area: update; }
-  
-
-    .imfo ul { 
-        flex-wrap: wrap; 
+      .imfo{
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0em 0em; 
       }
-      .imfo li { 
-        flex: 1 1 50%; 
-        font-size: 1em;
-      } 
-      .imfo { 
-        flex: 1 1 33.33%; 
-      } 
+      .email { 
+        grid-area: 1 / 1 / 2 / 2; 
+      }
+      .phone { 
+        grid-area: 2 / 1 / 3 / 2; 
+      }
+      .location { 
+        grid-area: 3 / 1 / 4 / 2; 
+    
     }
 
-    .mainLogo{
-        display: block;
-    }
+    .imfo li{
+      font-size: 0.8em;
+  }
+  
+.mainlogo {
+  display: block;
+}  
     
 
-    
+  }
