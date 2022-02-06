@@ -29,8 +29,7 @@
     }
     #nav a:hover {
       color:#D6EAFF;
-      border: 1em;
-      border-color:  #8EC2F5;
+     background-color: #0A0B0A;
     }
 
     .hamburger {
@@ -41,12 +40,23 @@
       display: flex;
     }
 
+    #date {
+      color: #8EC2F5; 
+      text-align: center;
+      line-height: 1em;
+      background-color: #FAFAFF;
+      border: #0A0B0A;
+      border-style: double;
+
+    }
+
     /*Images*/
 
 .mainLogo {
   display: flex;
   float: left;
   height: 150px;
+  padding-bottom: 0.25em;
 }
 
 .logo {
@@ -118,7 +128,7 @@ footer {
 }
 
 .imfo a:hover {
-  background-color: #8EC2F5;
+  background-color: #0A0B0A;
 }
 
 /*Sections*/
