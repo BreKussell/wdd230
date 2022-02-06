@@ -129,6 +129,7 @@ footer {
 
 .imfo a:hover {
   background-color: #0A0B0A;
+  opacity: 0.8; 
 }
 
 /*Sections*/
@@ -143,6 +144,12 @@ footer {
  .top-left {
   position: absolute;
   z-index: +1;
+  color: #0A0B0A;
+}
+#poc {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 #chamber {
   position: absolute;
@@ -225,6 +232,17 @@ footer {
         text-align: center;
  
       }
+#read {
+  display: none;
+  color:#0A0B0A;
+  font-family: "Merriweather", cursive;
+  padding: 1em;
+  max-width: 1000px;
+}
+#readMore {
+  cursor: pointer;
+  color: #8EC2F5;
+}
       
       .weather { 
         background-color: #FAFAFF;
@@ -233,11 +251,4 @@ footer {
         border-color: #0A0B0A;
         text-align: center;
  
-       }
-
-       /*images*/
-       #poc {
-         width: 100%;
-         height: 100%;
-         z-index: -1;
        }

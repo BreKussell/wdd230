@@ -35,5 +35,21 @@ if (
 document.getElementById('date').innerHTML = message;
 
 
+// Read More
+function readMore() {
+  let text = document.getElementById("read");
+  if (text.style.display === "none") {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+//read less
+function change() 
+{
+    let less = document.getElementById("readMore");
+    if (less.value=="read more.....") less.value = "read less....";
+    else less.value = "read less.....";
+}
 
 // Weather app
