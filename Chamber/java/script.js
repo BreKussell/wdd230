@@ -63,7 +63,7 @@ function change()
   let calcWindChill = windChill(temp, wind);
   // display output in h3
   document.getElementById("windChill").innerText =
-    "Wind Chill " + calcWindChill.toFixed(2) + "(°F)";
+    "Wind Chill " + calcWindChill.toFixed(0) + "(°F)";
 
 function windChill(temp, wind) {
   // declare variables set them to values found in text box
