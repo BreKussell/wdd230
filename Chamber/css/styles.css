@@ -147,7 +147,9 @@ footer {
   color: #0A0B0A;
 }
 #poc {
-  /*width: 100%;*/
+  max-width: 100%;
+  padding-top: 56.25%;
+  object-fit: fill;
   aspect-ratio: auto 4 / 3;
   z-index: -1;
 }
