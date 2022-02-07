@@ -48,8 +48,8 @@ function readMore() {
 function change() 
 {
     let less = document.getElementById("readMore");
-    if (less.value=="read more.....") less.value = "read less....";
-    else less.value = "read less.....";
+    if (less.value=="read more...") less.value = "read more...";
+    else less.value = "read less...";
 }
 
 // Weather app
