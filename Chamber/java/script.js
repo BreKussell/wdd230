@@ -53,3 +53,27 @@ function change()
 }
 
 // Weather app
+
+// Wind Chill
+  // temporary stand in for temperature
+  let temp = 45;
+  // temporary stand in for wind speed
+  let wind = 3.0;
+  // call windChill function
+  let calcWindChill = windChill(temp, wind);
+  // display output in h3
+  document.getElementById("windChill").innerText =
+    "Wind Chill " + calcWindChill.toFixed(2) + "(°F)";
+
+function windChill(temp, wind) {
+  // declare variables set them to values found in text box
+  let t = temp;
+  let w = wind;
+  // math
+  let chill =
+    35.75 +
+    0.6215 * t -
+    35.75 * Math.pow(w, 0.16) +
+    0.4275 * t * Math.pow(w, 0.16);
+  return chill;
+}
