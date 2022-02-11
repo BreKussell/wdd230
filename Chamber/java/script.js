@@ -1,11 +1,11 @@
 // mobile navigation 
 function mobileNav() {
-    const x = document.getElementById("nav");
-if (x.className == "top") {
-x.className += " responsive";
-} else {
-x.className = "top";
-}
+  var x = document.getElementById("navigation");
+  if (x.className === "mobileNavigation") {
+    x.className += " responsive";
+  } else {
+    x.className = "mobileNavigation";
+  }
 }
 
 
@@ -27,7 +27,7 @@ if (
   dayOfWeek == 1 ||
   dayOfWeek == 2
 ) {
-  message = date + "<br />" + " Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+  message = date  + ". Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
 } else {
   message = date;
 }

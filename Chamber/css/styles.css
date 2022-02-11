@@ -2,255 +2,182 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
 @import url("https://fonts.googleapis.com/css?family=Merienda");
 
+/*General Styling*/
+html {
+  background-color: #8BBEB2;
+}
 
-  /*Navigation*/
-  #logoBox {
-      line-height: 6em;
-     padding: 1em;
-      transition: top 0.3s;
-      background-color: #638492;
-    }
-    
-    #nav a {
-      font-size: 1.5em;
-      padding: 1em;
-      color:#8EC2F5;
-      text-decoration: none;
-      font-family: "Merienda", cursive;
-      font-weight: bold;
-    }
-    
-    #nav ul {
-      list-style-type: none;
-      display: flex; 
-    }
-    #nav li {
-      flex: auto;
-    }
-    #nav a:hover {
-      color:#D6EAFF;
-     background-color: #0A0B0A;
-    }
+h1, h2, h3, h4, h5 {
+  font-family: "Merienda", cursive;
+  color: #5389CA;
+  padding: 0.5em;
+}
 
-    .hamburger {
-        display: none;
-    }
+p {
+  color:#050212;
+  font-family: "Merriweather", cursive;
+  padding: 1em;
+  max-width: 1000px;
+}
 
-    .container {
-      display: flex;
-    }
+/*Navigation*/
+#logoBox, footer {
+  background-color: #050212;
+  height: 10em;
+ 
+}
 
-    #date {
-      color: #8EC2F5; 
-      text-align: center;
-      line-height: 1em;
-      background-color: #FAFAFF;
-      border: #0A0B0A;
-      border-style: double;
+.mobileNavigation {
+    overflow: hidden;
+    background-color: #050212;
+  }
+  
+  .mobileNavigation a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: "Merienda", cursive;
+    font-weight: bold;
+  }
+  
+  .mobileNavigation a:hover, 
+  #location:hover {
+    cursor: pointer;
+    border-bottom: solid 5px;
+    border-color: #D0F467;
+    color: #5389CA;
+  }
+  
+  .mobileNavigation a.active {
+    border-bottom: solid 5px;
+    border-color: #D0F467;
+    color: #5389CA;
+  }
 
-    }
 
-    /*Images*/
+  #content{
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
 
+/*footer*/ 
+#email,
+#phone,
+#location {
+  text-align: center;
+  color: #f2f2f2;
+  padding: 1em;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: "Merienda", cursive;
+  font-weight: bold;
+}
+
+/*Images*/
 .mainLogo {
   display: flex;
   float: left;
-  height: 150px;
-  padding-bottom: 0.25em;
+  height: 100%;
+  padding: 0.5em;
 }
 
 .logo {
       height: 50px;
       display: flex;
       float: left;
+      padding: 0.25em;
     }
-   
-/*general styling*/
-
-body{
-  background-color: #D6EAFF;
+.logo:hover {
+  border-bottom: solid 5px;
+  border-color: #D0F467;
 }
 
-#content{
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-main{
-  background-color: #D6EAFF;
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: "Merienda", cursive;
-  color: #638492;
+.clip {
   padding: 0.5em;
+  width: 50%;
+  border-bottom: solid 5px;
+  border-color: #D0F467;
 }
 
-p {
-  color:#0A0B0A;
-  font-family: "Merriweather", cursive;
-  padding: 1em;
-  max-width: 1000px;
+/*Grid sections*/
+.hero, 
+.news, 
+.spotlight1, 
+.spotlight2, 
+.spotlight3, 
+.weather, 
+.event, 
+.join { 
+  background-color: #FAFAFF;
+   box-shadow: 1px 1px 10px 1px #050212;
+   border: double; 
+   border-color: #0A0B0A;
+   text-align: center;
 }
 
-footer {
-  line-height: 6em;
- padding: 1em;
-  transition: top 0.3s;
-  background-color: #638492;
-
+.top-left {
+position: absolute;
+z-index: +1;
+color: #050212;
 }
 
-.imfo li {
-  font-size: 1.5em;
-  padding: 1em;
-  color:#8EC2F5;
-  text-decoration: none;
-  font-family: "Merienda", cursive;
-  font-weight: bold;
-}
-
-.imfo ul {
-  list-style-type: none;
-  display: flex; 
-}
-.imfo li {
-  flex: auto;
-}
-
-.imfo a {
-  font-size: 1.5em;
-  padding: 1em;
-  color:#8EC2F5;
-  text-decoration: none;
-  font-family: "Merienda", cursive;
-  font-weight: bold;
-}
-
-.imfo a:hover {
-  background-color: #0A0B0A;
-  opacity: 0.8; 
-}
-
-/*Sections*/
-
-    .hero { 
-       background-color: #FAFAFF;
-        box-shadow: 1px 1px 10px 1px #0A0B0A;
-        border: double; 
-        border-color: #0A0B0A;
-        text-align: center;
- }
- .top-left {
-  position: absolute;
-  z-index: +1;
-  color: #0A0B0A;
-}
 #poc {
-  max-width: 100%;
-  padding-top: 56.25%;
-  object-fit: fill;
-  aspect-ratio: auto 4 / 3;
-  z-index: -1;
+max-width: 100%;
+padding-top: 56.25%;
+object-fit: fill;
+aspect-ratio: auto 4 / 3;
+z-index: -1;
 }
+
 #chamber {
-  position: absolute;
-  bottom: 2%;
-  right: 30%;
-  padding: 1em;
-  width: 12%;
-  font-family: "Merienda", cursive;
-  background-color: #8EC2F5;
-  color:#0A0B0A;
-  box-shadow: 1px 1px 10px 1px #0A0B0A;
-  z-index: +1;
-  font-size: 1.1em;
-  border-radius: 0.5em;
+position: absolute;
+bottom: 2%;
+right: 30%;
+padding: 1em;
+width: 12%;
+font-family: "Merienda", cursive;
+background-color: #8EC2F5;
+color:#050212;
+box-shadow: 1px 1px 10px 1px #050212;
+z-index: +1;
+font-size: 1.1em;
+border-radius: 0.5em;
 }
-      
-      .news { 
-        background-color: #FAFAFF;
-        box-shadow: 1px 1px 10px 1px #0A0B0A;
-        border: double;  
-        border-color: #0A0B0A;
-        text-align: center;
- }
-
-       
-      
-      .spotlight1 { 
-        background-color: #FAFAFF;
-        box-shadow: 1px 1px 10px 1px #0A0B0A;
-        border: double; 
-        border-color: #0A0B0A;
-        text-align: center;
  
-       }
-      
-      .spotlight2 { 
-        background-color: #FAFAFF;
-        box-shadow: 1px 1px 10px 1px #0A0B0A;
-        border: double; 
-        border-color: #0A0B0A;
-        text-align: center;
- 
-       }
-      
-      .spotlight3 {
-        background-color: #FAFAFF;
-        box-shadow: 1px 1px 10px 1px #0A0B0A;
-        border: double; 
-        border-color: #0A0B0A;
-        text-align: center;
- 
-       }
-      
-      .join { 
-        background-color: #FAFAFF;
-        box-shadow: 1px 1px 10px 1px #0A0B0A;
-        border: double;  
-        border-color: #0A0B0A;
-        text-align: center;
- 
-       }
 #joinButton {
-  width: 100%;
-  margin-top: 0.5em;
-  padding: 1em;
-  font-family: "Merienda", cursive;
-  background-color: #8EC2F5;
-  color:#0A0B0A;
-  box-shadow: 1px 1px 10px 1px #0A0B0A;
-  font-size: 1em;
+width: 100%;
+margin-top: 0.5em;
+padding: 1em;
+font-family: "Merienda", cursive;
+background-color: #5389CA;
+color: #fff;
+box-shadow: 1px 1px 10px 1px #050212;
+font-size: 1em;
 }
-
-
-      
-      .event { 
-        background-color: #FAFAFF;
-        box-shadow: 1px 1px 10px 1px #0A0B0A; 
-        border: double;  
-        border-color: #0A0B0A;
-        text-align: center;
+#joinButton:hover {
+  cursor: pointer;
+  background-color: #D0F467;
+  color: #050212;
+}
  
-      }
 #read {
-  display: none;
-  color:#0A0B0A;
-  font-family: "Merriweather", cursive;
-  padding: 1em;
-  max-width: 1000px;
+display: none;
+color:#050212;
+font-family: "Merriweather", cursive;
+padding: 1em;
+max-width: 1000px;
 }
 #readMore {
-  cursor: pointer;
-  color: #8EC2F5;
+  color: #5389CA;
+
 }
-      
-      .weather { 
-        background-color: #FAFAFF;
-        box-shadow: 1px 1px 10px 1px #0A0B0A;
-        border: double; 
-        border-color: #0A0B0A;
-        text-align: center;
+#readMore:hover {
+cursor: pointer;
+color: #D0F467;
+}
  
-       }
+

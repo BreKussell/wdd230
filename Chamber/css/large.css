@@ -1,39 +1,37 @@
+/*Large*/
 @media screen and (min-width: 1000px) {
-/*grid*/
-.container {  display: grid;
-    grid-template-columns: 0.5fr 1.5fr 0.5fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 1em 1em;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "event hero spotlight1"
-      "weather hero spotlight2"
-      "join news spotlight3";
+.hamburger {
+  display: none;
+}
+
+  /*grid*/
+  .container {  display: grid;
+      grid-template-columns: 0.5fr 1.5fr 0.5fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 1em 1em;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "event hero spotlight1"
+        "weather hero spotlight2"
+        "join news spotlight3";
+    }
+    
+    .spotlight1 { grid-area: spotlight1; }
+    
+    .spotlight2 { grid-area: spotlight2; }
+    
+    .spotlight3 { grid-area: spotlight3; }
+    
+    .event { grid-area: event; }
+    
+    .weather { grid-area: weather; }
+    
+    .join { grid-area: join; }
+    
+    .hero { grid-area: hero; }
+    
+    .news { grid-area: news; }
+  
   }
-  
-  .spotlight1 { grid-area: spotlight1; }
-  
-  .spotlight2 { grid-area: spotlight2; }
-  
-  .spotlight3 { grid-area: spotlight3; }
-  
-  .event { grid-area: event; }
-  
-  .weather { grid-area: weather; }
-  
-  .join { grid-area: join; }
-  
-  .hero { grid-area: hero; }
-  
-  .news { grid-area: news; }
-
-
-
-#content{
-    margin: 0 auto;
-    max-width: 1800px;
-    padding-top: 1em;
-}
-}
 
 

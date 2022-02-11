@@ -1,148 +1,146 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Chamber</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/small.css" />
-    <link rel="stylesheet" href="css/medium.css" />
-    <link rel="stylesheet" href="css/large.css" />
-    <link
-      rel="icon"
-      href="imgs/logo.png"
-    />
-  </head>
-  <body>
-  <header>
-      <div id="logoBox">
-        <img src="imgs/logo.png" alt="logo" class="mainLogo">
-        <a href="https://www.facebook.com/" target="_blank"><img src="imgs/fb.png" alt="face book logo" class="logo"></a>
-        <a href="https://www.linkedin.com/" target="_blank"><img src="imgs/linkedIn.png" alt="linkedIn logo" class="logo"></a>
-      <nav id="nav" class="top">
-          <ul>
-            <li><a href="javascript:void(0);" class="hamburger" onclick="mobileNav()">&#9776;</a></li>
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="#">Discover</a></li>
-            <li><a href="#">Directory</a></li>
-            <li><a href="#">Join</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-      </nav>
-      <h3 id="date"></h3>
-    </div>
-  </header>
-  <div id="content">
-   
-    <main>
-      
-
-        <div class="container">
-
-          <div class="spotlight1">
-            <h2>spotlight1</h2>
-            <h4>emailaddress@emal.com</h4>
-            <img>
-            <h3>We're Here For You</h3>
-            <h4>0118-999-881-999-119-7253</h4>
+<head>
+<title>Chamber</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/small.css">
+<link rel="stylesheet" href="css/medium.css">
+<link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <div id="logoBox">
+          <img src="imgs/logo.png" alt="logo" class="mainLogo">
+          <a href="https://www.facebook.com/" target="_blank"><img src="imgs/fb.png" alt="face book logo" class="logo"></a>
+          <a href="https://www.linkedin.com/" target="_blank"><img src="imgs/linkedIn.png" alt="linkedIn logo" class="logo"></a>
+       
+          <nav  class="mobileNavigation" id="navigation">
             
-          </div>
-          
-          <div class="spotlight2">
-            <h2>Code Primera</h2>
-            <img>
-            <h3>After School educational Program</h3>
-            <h4>888-888-8888</h4>
-            <h4>emailaddress@emal.com</h4>
-          
-          </div>
-
-          <div class="spotlight3">
-            <h2>Build a Tree House</h2>
-            <img>
-            <h3>Over 1000 Plans</h3>
-            <h4>999-999-9999</h4>
-            <h4>emailaddress@emal.com</h4>
-          </div>
-
-          <div class="event">
-            <h2>Ribbon Cutting</h2>
-            <h3>Place Name</h3>
-            <img>
-            <p>Come join us for (Name Event)......
-             Donec nec nisi sollicitudin, viverra augue at, 
-             sodales nisl. Integer pretium sit amet risus a 
-             tincidunt. Donec vehicula, mi at iaculis porttitor, 
-             ligula quam pulvinar urna, et rhoncus justo massa uttortor.
-             <a onclick="readMore()" onclick = "change()" id="readMore">read more...</a>
-            <div id="read">
-            Fusce gravida congue justo, eget tempus turpis finibus at. 
-            In vel lacus nec purus rhoncus mattis quis et libero. 
-            Duis ullamcorper velit id nulla viverra tristique. 
-            Etiam ornare leo sed justo efficitur, vel luctus nulla imperdiet.
-             Nullam eu velit nibh. Proin non dolor sed justo congue faucibus. 
-             Sed id faucibus felis. Proin ullamcorper nibh eget orci 
-             consectetur, ut ornare augue sagittis. Cras blandit odio vehicula,
-              tincidunt dolor vel, egestas dolor.
-            </div> 
-             </p>
-          
-          </div>
-
-          <div class="weather">
-            <h2>Weather</h2>
-            <h3>Temperature 45°F</h3>
-            <h3>Wind Speed: 3mph</h3>
-            <h3 id="windChill"></h3>
-
-          </div>
-
-          <div class="join">
-            <button id="joinButton">Come Join Us!</button>
-           <p>
-             Discover how you can come join the 
-             Chamber of Commerce and how it will 
-             benefit your organization! 
-           </p>
-          </div>
-
-          <div class="hero">
-          <!---  <h1 class="top-left">Welcome to Pocatello</h1> --->
-            <img src="imgs/wdd230-org.jpg" alt="pocatello" id = "poc">
-           <!--- <button id="chamber">Join The Chamber</button> --->
-          </div>
-
-          <div class="news">
-            <h2>News Release</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et scelerisque augue. 
-            Suspendisse posuere velit at velit sagittis, vitae ornare massa pulvinar. Nunc felis erat, 
-            rhoncus at rhoncus nec, facilisis ut eros. Etiam consectetur, dolor quis gravida finibus, 
-            urna mi semper arcu, pulvinar dictum enim diam in neque. Morbi aliquet iaculis ante, id 
-            bibendum lacus malesuada nec. Nulla facilisi. Integer arcu enim, aliquam a condimentum ut, 
-            fringilla non tellus. Praesent iaculis sollicitudin ante, in rhoncus est fringilla sit amet. 
-            Donec id sem velit. Duis quis rhoncus metus, non hendrerit tortor. Aliquam semper sapien eu 
-            odio lacinia, nec imperdiet erat efficitur. Vivamus vestibulum ligula nisi, a posuere purus scelerisque non.
-          </p>
-          </div>
-        </div>
-
+              <a href="javascript:void(0);" class="hamburger" onclick="mobileNav()">&#9776;</a>
+              <a class="active" href="#">Home</a>
+              <a href="#">Discover</a>
+              <a href="#">Directory</a>
+              <a href="#">Join</a>
+              <a href="#">Contact</a>
+            
+        </nav>
+        <h3 id="date"></h3>
       </div>
-      </main>
-      <footer>
-        <img src="imgs/logo.png" alt="logo" class="mainLogo">
-        <div class="imfo">  
-          <ul>
-          <li class="email">imfoEmailaddress@email.com</li>   
-          <li class="phone">x+(xxx)-xxx-xxxx</li>  
-          <li class="location"><a href = "https://www.google.com/maps/" target="_blank">Location</a></li>  
-          </ul>
-        </div>
-
-        <div class="update">  
-        </div>
-      </footer>
+      <div id="content">
+   
+        <main>
+          
+    
+            <div class="container">
+    
+              <div class="spotlight1">
+                <h2>spotlight1</h2>
+                <h4>emailaddress@emal.com</h4>
+                <img class="clip" src="imgs/truck.png" alt="truck">
+                <h3>We're Here For You</h3>
+                <h4>0118-999-881-999-119-7253</h4>
+                
+              </div>
+              
+              <div class="spotlight2">
+                <h2>Code Primera</h2>
+                <img class = "clip" src = "imgs/pen.png" alt="code"> 
+                
+                <h3>After School educational Program</h3>
+                <h4>888-888-8888</h4>
+                <h4>emailaddress@emal.com</h4>
+              
+              </div>
+    
+              <div class="spotlight3">
+                <h2>Build a Tree House</h2>
+                <img class="clip" src="imgs/th.png" alt="tree house"/>
+                <h3>Over 1000 Plans</h3>
+                <h4>999-999-9999</h4>
+                <h4>emailaddress@emal.com</h4>
+              </div>
+    
+              <div class="event">
+                <h2>Ribbon Cutting</h2>
+                <h3>Place Name</h3>
+                <img>
+                <p>Come join us for (Name Event)......
+                 Donec nec nisi sollicitudin, viverra augue at, 
+                 sodales nisl. Integer pretium sit amet risus a 
+                 tincidunt. Donec vehicula, mi at iaculis porttitor, 
+                 ligula quam pulvinar urna, et rhoncus justo massa uttortor.
+                 <a onclick="readMore()" onclick = "change()" id="readMore">read more...</a>
+                <div id="read">
+                Fusce gravida congue justo, eget tempus turpis finibus at. 
+                In vel lacus nec purus rhoncus mattis quis et libero. 
+                Duis ullamcorper velit id nulla viverra tristique. 
+                Etiam ornare leo sed justo efficitur, vel luctus nulla imperdiet.
+                 Nullam eu velit nibh. Proin non dolor sed justo congue faucibus. 
+                 Sed id faucibus felis. Proin ullamcorper nibh eget orci 
+                 consectetur, ut ornare augue sagittis. Cras blandit odio vehicula,
+                  tincidunt dolor vel, egestas dolor.
+                </div> 
+                 </p>
+              
+              </div>
+    
+              <div class="weather">
+                <h2>Weather</h2>
+                <img class="clip" src="imgs/pc.png" alt="truck">
+                <h3>Temperature 45°F</h3>
+                <h3>Wind Speed: 3mph</h3>
+                <h3 id="windChill"></h3>
+    
+              </div>
+    
+              <div class="join">
+                <button id="joinButton">Come Join Us!</button>
+               <p>
+                 Discover how you can come join the 
+                 Chamber of Commerce and how it will 
+                 benefit your organization! 
+               </p>
+              </div>
+    
+              <div class="hero">
+              <!---  <h1 class="top-left">Welcome to Pocatello</h1> --->
+                <img src="imgs/wdd230-org.jpg" alt="pocatello" id = "poc">
+               <!--- <button id="chamber">Join The Chamber</button> --->
+              </div>
+    
+              <div class="news">
+                <h2>News Release</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et scelerisque augue. 
+                Suspendisse posuere velit at velit sagittis, vitae ornare massa pulvinar. Nunc felis erat, 
+                rhoncus at rhoncus nec, facilisis ut eros. Etiam consectetur, dolor quis gravida finibus, 
+                urna mi semper arcu, pulvinar dictum enim diam in neque. Morbi aliquet iaculis ante, id 
+                bibendum lacus malesuada nec. Nulla facilisi. Integer arcu enim, aliquam a condimentum ut, 
+                fringilla non tellus. Praesent iaculis sollicitudin ante, in rhoncus est fringilla sit amet. 
+                Donec id sem velit. Duis quis rhoncus metus, non hendrerit tortor. Aliquam semper sapien eu 
+                odio lacinia, nec imperdiet erat efficitur. Vivamus vestibulum ligula nisi, a posuere purus scelerisque non.
+              </p>
+              </div>
+            </div>
+    
+          </div>
+          </main>
+</body>
+<footer>
+    <img src="imgs/logo.png" alt="logo" class="mainLogo" id="footerMainLogo">
+    <div class="imfo">  
+      <a id="email">imfoEmailaddress@email.com</a> 
+      <a id="phone">x+(xxx)-xxx-xxxx</a>
+      <a id="location" href = "https://www.google.com/maps/"  onclick="window.open('hhttps://www.google.com/maps/','popup','width=600,height=600'); return false;">
+        Location</a>
+      
     </div>
+
+    <div class="update">  
+    </div>
+  </footer>
+</div>
     
     <script src="java/script.js"></script>
   
