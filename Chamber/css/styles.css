@@ -24,7 +24,7 @@ p {
 #logoBox, footer {
   background-color: #050212;
   height: 10em;
- 
+  padding: 0.5em;
 }
 
 .mobileNavigation {
@@ -127,11 +127,10 @@ color: #050212;
 
 #poc {
 max-width: 100%;
-padding-top: 56.25%;
 object-fit: fill;
-aspect-ratio: auto 4 / 3;
 z-index: -1;
 }
+
 
 #chamber {
 position: absolute;
