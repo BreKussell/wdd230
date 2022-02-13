@@ -126,8 +126,7 @@ color: #050212;
 }
 
 #poc {
-max-width: 100%;
-object-fit: fill;
+width: 100%;
 z-index: -1;
 }
 
