@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Merienda');
 
+html{
+   background-color: #FEFFFE;
+}
+
 header {
     display: grid;
     grid-template-columns: 110px auto;   

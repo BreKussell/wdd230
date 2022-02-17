@@ -62,8 +62,17 @@ function change()
   // call windChill function
   let calcWindChill = windChill(temp, wind);
   // display output in h3
-  document.getElementById("windChill").innerText =
-    "Wind Chill " + calcWindChill.toFixed(0) + "(°F)";
+  if (
+    wind <= 3 ||
+    temp >= 50
+  ) {
+    message = "Wind Chill:  N/A";
+  } else {
+    message = "Wind Chill " + calcWindChill.toFixed(0) + "(°F)";
+  }
+  // Display message in h3 where id = date
+  document.getElementById('windChill').innerHTML = message;
+  
 
 function windChill(temp, wind) {
   // declare variables set them to values found in text box
