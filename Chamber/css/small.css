@@ -16,6 +16,7 @@
 
 .mobileNavigation a {
   font-size: 1em;
+  line-height: 2em;
 }
 
 .mainLogo {
@@ -56,9 +57,69 @@ grid-template-areas:
 
 .hero { grid-area: hero; }
 
-footer, #logoBox {
+
+
+.disContainer {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 1em 1em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "cc"
+    "isu"
+    "holt"
+    "ep"
+    "pac"
+    "temple"
+    "old"
+    "pill"
+    "rail";
+}
+
+.cc { grid-area: cc; }
+
+.isu { grid-area: isu; }
+
+.holt { grid-area: holt; }
+
+.ep { grid-area: ep; }
+
+.pac { grid-area: pac; }
+
+.temple { grid-area: temple; }
+
+.old { grid-area: old; }
+
+.pill { grid-area: pill; }
+
+.rail { grid-area: rail; }
+
+figure img {
+  width: 300px;
+}
+
+.cc,
+.pac,
+.ep,
+.old,
+.isu,
+.pill,
+.holt,
+.temple,
+.rail { 
+  margin: auto;
+  width: auto;
+}
+
+footer {
 height: auto;
 
+}
+
+#logoBox{
+height: auto;
 }
 
 #email,
@@ -68,5 +129,9 @@ height: auto;
 display: block;
 text-align: center;
 margin: auto;
+}
+
+.lazy {
+  width: 50%;
 }
 }

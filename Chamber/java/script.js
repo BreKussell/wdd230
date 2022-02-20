@@ -58,7 +58,7 @@ function change()
   // temporary stand in for temperature
   let temp = 45;
   // temporary stand in for wind speed
-  let wind = 3.0;
+  let wind = 5.0;
   // call windChill function
   let calcWindChill = windChill(temp, wind);
   // display output in h3

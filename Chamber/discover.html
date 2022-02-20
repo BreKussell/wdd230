@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chamber</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/small.css">
+<link rel="stylesheet" href="css/medium.css">
+<link rel="stylesheet" href="css/large.css">
+<style>
+@media screen and (max-width: 600px) {
+    #logoBox {
+        height: 5em;
+    }
+}
+</style>
+</head>
+<body>
+    <header>
+        <div id="logoBox">
+          <img src="imgs/logo.png" alt="logo" class="mainLogo">
+          <a href="https://www.facebook.com/" target="_blank"><img src="imgs/fb.png" alt="face book logo" class="logo"></a>
+          <a href="https://www.linkedin.com/" target="_blank"><img src="imgs/linkedIn.png" alt="linkedIn logo" class="logo"></a>
+       
+          <nav  class="mobileNavigation" id="navigation">
+            
+              <a href="javascript:void(0);" class="hamburger" onclick="mobileNav()">&#9776;</a>
+              <a href="Index.html">Home</a>
+              <a class="active" href="#">Discover</a>
+              <a href="#">Directory</a>
+              <a href="#">Join</a>
+              <a href="#">Contact</a>
+            
+        </nav>
+      </div>
+      <main>
+      <div id="content">
+        <div class="disContainer">
+
+            <div class="cc">
+                <figure>
+                <img src ="https://dummyimage.com/" data-src="imgs/cityCreek.jpg" alt="City Creek" class="lazy">
+                <figcaption> City Creek is a series of trails, that follows a creek.
+                    various crossing on small bridges.</figcaption>
+            </figure>
+            </div>
+
+            <div class="ep">
+                <figure>
+            <img src ="https://dummyimage.com/" data-src="imgs/Eastern_Pocatello.jpg" alt="Over View" class="lazy">
+            <figcaption>Overview of the city.</figcaption>
+        </figure>
+        </div>
+
+            <div class="old">
+                 <figure>
+                <img src ="https://dummyimage.com/" data-src="imgs/oldTown.jpg" alt="Old Town" class="lazy">
+                <figcaption> Historic down town. </figcaption>
+            </figure>
+            </div>
+
+            <div class="isu">  
+                <figure>
+                <img src ="https://dummyimage.com/" data-src="imgs/ISU.jpg" alt="ISU" class="lazy">
+                <figcaption>Idaho State University</figcaption>
+            </figure>
+            </div>
+
+            <div class="pac"> 
+                <figure>
+                <img src ="https://dummyimage.com/" data-src="imgs/performingArtsCenter.jpg" alt="Performing Arts Center" class="lazy">
+                <figcaption> Pocatello Idaho, has one of the nicest performing arts centers in the US. 
+                    The theatre inside has panels along the wall that can move in or out that 
+                    affects the sound. It can be adjusted so there is no sound delay to a few
+                    seconds of sound delay. </figcaption>
+            </figure>
+            </div>
+
+            <div class="pill">
+                 <figure>
+                <img src ="https://dummyimage.com/" data-src="imgs/pilliars.jpg" alt="Red Hill" class="lazy">
+                <figcaption>Another hiking trail in Pocatello is Red Hill Pillars close to ISU campus. 
+                    . These were originally part of a funeral home 
+                      that were donated in 1966, until the funeral home was ultimately 
+                      relocated.</figcaption>
+            </figure>
+            </div>
+
+            <div class="holt">
+                <figure>
+            <img src ="https://dummyimage.com/" data-src="imgs/holt.jpg" alt="Hold Arena" class="lazy">
+            <figcaption>Holt Arena, indoor football field</figcaption>
+        </figure>
+        </div>
+
+            <div class="temple">
+                <figure>
+            <img src ="https://dummyimage.com/" data-src="imgs/temple.jpg" alt="Temple" class="lazy">
+            <figcaption>Pocatello Temple</figcaption>
+        </figure>
+    </div>
+                <div class="rail">
+            <figure>
+                <img src ="https://dummyimage.com/" data-src="imgs/railroad.jpg" alt="Railroad" class="lazy">
+                <figcaption>  Pocatello historically is a railroad town.</figcaption>
+            </figure>
+        </div>
+          </div>
+
+          </main>
+       
+</body>
+<footer>
+    <img src="imgs/logo.png" alt="logo" class="mainLogo" id="footerMainLogo">
+    <div class="imfo">  
+      <a id="email">imfoEmailaddress@email.com</a> 
+      <a id="phone">x+(xxx)-xxx-xxxx</a>
+      <a id="location" href = "https://www.google.com/maps/"  onclick="window.open('https://www.google.com/maps/','popup','width=600,height=600'); return false;">
+        Location</a>
+      
+    </div>
+
+    <div class="update">  
+    </div>
+  </footer>
+</div>
+    
+    <script src="java/discover.js"></script>
+  
+  </html>

@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
 @import url("https://fonts.googleapis.com/css?family=Merienda");
 
-/*General Styling*/
+/*General Styling____________________________________________________________________________________*/
 html {
   background-color: #8BBEB2;
 }
@@ -13,14 +13,17 @@ h1, h2, h3, h4, h5 {
   padding: 0.5em;
 }
 
-p {
+p, figcaption {
   color:#050212;
   font-family: "Merriweather", cursive;
   padding: 1em;
-  max-width: 1000px;
 }
 
-/*Navigation*/
+p {max-width: 1000px;}
+
+ figcaption{max-width: 500px;}
+
+/*Navigation__________________________________________________________________________________________________*/
 #logoBox, footer {
   background-color: #050212;
   height: 10em;
@@ -64,7 +67,7 @@ p {
     padding-bottom: 1em;
   }
 
-/*footer*/ 
+/*footer__________________________________________________________________________________________________________*/ 
 #email,
 #phone,
 #location {
@@ -77,7 +80,7 @@ p {
   font-weight: bold;
 }
 
-/*Images*/
+/*Images________________________________________________________________________________________________________*/
 .mainLogo {
   display: flex;
   float: left;
@@ -103,6 +106,14 @@ p {
   border-color: #D0F467;
 }
 
+figure img {
+  width: 500px;
+}
+figure img:hover {
+  border-radius: 50%;
+  border: double 5px #050212;
+}
+
 /*Grid sections*/
 .hero, 
 .news, 
@@ -111,8 +122,17 @@ p {
 .spotlight3, 
 .weather, 
 .event, 
-.join { 
-  background-color: #FAFAFF;
+.join,
+.cc,
+.pac,
+.ep,
+.old,
+.isu,
+.pill,
+.holt,
+.temple,
+.rail { 
+  background-color: #f2f2f2;
    box-shadow: 1px 1px 10px 1px #050212;
    border: double; 
    border-color: #0A0B0A;
