@@ -3,6 +3,7 @@ main {
     background-color: rgb(127, 185, 194);
     margin: auto;
     box-shadow: 8px 5px 15px 1px rgb(98, 140, 166);
+    border-radius: 5px; 
 }
 
 h1,h3 {
@@ -15,7 +16,7 @@ h1,h3 {
 table {
     width: 100%;
     margin: auto; 
-    border-radius: 5px; 
+   
 }
 
 th {
@@ -48,7 +49,7 @@ tr:nth-child(odd) {
   
 
 
-table, th, td {
+main, table, th, td {
     border:1px solid rgb(187, 187, 187);
 }
 
