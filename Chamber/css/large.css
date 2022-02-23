@@ -40,7 +40,7 @@
       grid-auto-rows: 1fr; 
       grid-template-columns: 1fr 1fr 1fr; 
       grid-template-rows: 1fr 1fr 1fr; 
-      gap: 1em 1em; 
+      gap: 2em 2em; 
       grid-template-areas: 
         "cc ep old"
         "isu pac pill"

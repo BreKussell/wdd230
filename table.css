@@ -1,0 +1,48 @@
+main {
+    width: 70%;
+    background-color: rgb(127, 185, 194);
+    margin: auto;
+    box-shadow: 8px 2px 15px 1px rgb(98, 140, 166);
+}
+
+h1,h3 {
+    color: black;
+    text-align: center;
+}
+
+h1{
+    padding-top: 0.25em;
+}
+
+table {
+    width: 100%;
+    margin: auto;  
+}
+
+th {
+    background-color:rgb(98, 140, 166);
+    color: white;
+    font-size: 2em;
+    text-align: left;
+    padding: 0.25em;
+}
+
+td {
+    font-size: 1.5em;
+    padding: 0.25em;
+    font-weight: lighter;
+}
+
+tr:nth-child(odd) {
+    background: rgb(231, 255, 237);
+  }
+  tr:nth-child(even) {
+    background: rgb(231, 240, 237);
+  }
+  
+
+
+table, th, td {
+    border:1px solid rgb(187, 187, 187);
+}
+
