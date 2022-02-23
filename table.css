@@ -1,9 +1,25 @@
+@media screen and (min-width: 1000px) {
+    main {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        width: 80%;
+    }
+}
+
 main {
-    width: 70%;
     background-color: rgb(127, 185, 194);
     margin: auto;
     box-shadow: 8px 5px 15px 1px rgb(98, 140, 166);
-    border-radius: 5px; 
 }
 
 h1,h3 {
