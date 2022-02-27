@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chamber</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/small.css">
+<link rel="stylesheet" href="css/medium.css">
+<link rel="stylesheet" href="css/large.css">
+<style>
+@media screen and (max-width: 600px) {
+    #logoBox {
+        height: 5em;
+    }
+}
+</style>
+</head>
+<body>
+    <header>
+        <div id="logoBox">
+          <img src="imgs/logo.png" alt="logo" class="mainLogo">
+          <a href="https://www.facebook.com/" target="_blank"><img src="imgs/fb.png" alt="face book logo" class="logo"></a>
+          <a href="https://www.linkedin.com/" target="_blank"><img src="imgs/linkedIn.png" alt="linkedIn logo" class="logo"></a>
+       
+          <nav  class="mobileNavigation" id="navigation">
+            
+              <a href="javascript:void(0);" class="hamburger" onclick="mobileNav()">&#9776;</a>
+              <a href="Index.html">Home</a>
+              <a href="discover.html">Discover</a>
+              <a href="#">Directory</a>
+              <a class="active" href="#">Join</a>
+              <a href="#">Contact</a>
+            
+        </nav>
+      </div>
+      <main>
+
+     <form class="jform">
+         <div class="jChamber">
+         <h1 style="border-bottom: solid 5px; border-color: #D0F467;">Join the Chamber</h1>
+        </div>
+
+         <div class="name">
+         <label for="fName">First Name:</label>
+        <input type="text" id="fName"  required>
+
+        <label for="lName">Last Name:</label>
+        <input type="text" id="lName"  required>
+
+        </div>
+
+       
+        <div class="contact">
+
+        <label for="emailaddress">Email Address:</label>
+        <input type="text" id="emailaddress" placeholder="emailaddress@example.com">
+
+        <label for="number" class="cell">Phone Number:</label>
+        <input type="tel" id="number" required>
+        </div>
+
+        <div class="business">
+        <label for="bName" class="bsuinessN">Business Name:</label>
+        <input type="text" id="bName"  required>
+        <label for="title">Business Title or Position:</label>
+        <input type="text" id="title">
+        <a onclick="next()" class="next">Next</a>
+        </div>
+    
+
+     <div class="membership" id = "nextButton">
+        <h2>Membership Levels</h2>
+
+    <input type="radio" id="NP"  value="NP">
+    <label for="NP">Non Profit</label>
+
+    <input type="radio" id="bronze"  value="bronze">
+    <label for="bronze">Bronze</label>
+      
+    <input type="radio" id="silver" value="silver">
+    <label for="silver">Silver</label>
+
+
+    <input type="radio" id="gold" value="gold">
+    <label for="gold">Gold</label>
+
+
+    <a onclick="moreInfo()" class ="membershipInfo">Help and Additional Information</a>
+
+    <div id="memInfo">
+        <h3>Non Profit</h3>
+      
+        
+            <li>For non profit organizations and there is no fee</li>
+        
+
+         <h3>Bronze</h3>
+     
+         
+             <li>15% discount on events</li>
+               <li>10% discount on advertising</li> 
+                <li>Fee of $50/month</li>
+         
+
+         
+            <h3>Silver</h3>
+         
+             <li>25% discount on events</li>
+               <li>15% discount on advertising</li> 
+                <li>Free participation in the trade fair</li>
+                <li>Fee of $100/month</li>
+                
+         
+
+         <h3>Gold</h3>
+        
+         
+             <li>50% discount on events</li>
+               <li>50% discount on advertising</li> 
+                <li>Free participation in the trade fair</li>
+                <li></li>Fee of $100/month</li>
+                <li>5 free featured ads per year</li>
+                <li>1 free training per quarter</li>
+                <li>Fee of $250/month</li>
+
+                
+         </div>
+         
+        
+    <label for="descriptionOfBusiness" class="textdescription">Describe your business</label>
+    <textarea name="descriptionOfBusiness" placeholder="business description" rows="5"></textarea>
+        
+
+     
+       
+
+         <button class="submit">Submit</button>
+        </div>
+     </form>
+
+      </main>
+       
+</body>
+<footer>
+    <img src="imgs/logo.png" alt="logo" class="mainLogo" id="footerMainLogo">
+    <div class="imfo">  
+      <a id="email">imfoEmailaddress@email.com</a> 
+      <a id="phone">x+(xxx)-xxx-xxxx</a>
+      <a id="location" href = "https://www.google.com/maps/"  onclick="window.open('https://www.google.com/maps/','popup','width=600,height=600'); return false;">
+        Location</a>
+      
+    </div>
+
+    <div class="update">  
+    </div>
+  </footer>
+</div>
+    
+    <script src="java/join.js"></script>
+  
+  </html>

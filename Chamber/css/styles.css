@@ -102,8 +102,7 @@ p {max-width: 1000px;}
 .clip {
   padding: 0.5em;
   width: 50%;
-  border-bottom: solid 5px;
-  border-color: #D0F467;
+  
 }
 
 figure img {
@@ -131,13 +130,52 @@ figure img:hover {
 .pill,
 .holt,
 .temple,
-.rail { 
+.rail,
+.contact,
+.name,
+.business,
+ .membership,
+ .jChamber{ 
   background-color: #f2f2f2;
    box-shadow: 1px 1px 10px 1px #050212;
    border: double; 
    border-color: #0A0B0A;
    text-align: center;
 }
+.jform {
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 4fr; 
+  gap: 1em 0em; 
+  grid-template-areas: 
+    "jChamber"
+    "name"
+    "contact"
+    "business"
+    "membership"; 
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.jChamber { grid-area: jChamber; }
+.name { grid-area: name; }
+.contact { grid-area: contact; }
+.business { grid-area: business; }
+.membership { grid-area: membership; 
+              display:none;
+            }
+
+.contact,
+.name,
+.business,
+ .membership,
+ .jChamber {
+   margin: 0 auto;
+   width: 80%;
+   padding: 1em;
+ }
+
 
 .top-left {
 position: absolute;
@@ -166,7 +204,7 @@ font-size: 1.1em;
 border-radius: 0.5em;
 }
  
-#joinButton {
+#joinButton, .submit {
 width: 100%;
 margin-top: 0.5em;
 padding: 1em;
@@ -176,7 +214,10 @@ color: #fff;
 box-shadow: 1px 1px 10px 1px #050212;
 font-size: 1em;
 }
-#joinButton:hover {
+#joinButton:hover,
+.next:hover,
+.membershipInfo:hover,
+.submit:hover {
   cursor: pointer;
   background-color: #D0F467;
   color: #050212;
@@ -196,6 +237,70 @@ max-width: 1000px;
 #readMore:hover {
 cursor: pointer;
 color: #D0F467;
+}
+
+/*Form______________________________________________________________*/
+
+.name label, 
+.business label, 
+.contact label,
+.textdescription {
+  font-family: "Merienda", cursive;
+  padding: 1em;
+  float: left;
+  display: block;
+}
+
+.name label:after,
+.cell:after,
+.bsuinessN:after {
+    content:" *";
+    color: red;
+  }
+
+
+form input[type=text],
+form input[type=tel],
+form textarea {
+  width: 90%;
+padding: 1em;
+  margin: 8px 0;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+  border: #050212 double;
+}
+
+form input[type=radio] {
+  display: block;
+  padding: 2em;
+}
+
+
+textarea {
+  padding:1em;
+}
+
+.next,
+.membershipInfo {
+  padding: 1em;
+  background-color: #5389CA;
+  color:#f2f2f2;
+  float: right;
+  font-family: "Merriweather", cursive;
+  border: solid 2px;
+  border-color: #5389CA;
+  box-shadow: 1px 1px 10px 1px #050212;
+}
+
+.submit {
+  width: 25%;
+  display: block;
+  margin: auto;
+}
+
+#memInfo {
+  display: none;
 }
  
 
