@@ -9,6 +9,18 @@ function mobileNav() {
   }
 
 
+//tel Only allow Numbers
+function onlyNumbers(evt) {
+          
+  const ASCIICode = (evt.which) ? evt.which : evt.keyCode
+  if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+      return false;
+  return true;
+}
+
+// restricted Character
+
+
   // Read More
 function next() {
     let text = document.getElementById("nextButton");
@@ -34,14 +46,6 @@ function next() {
 };
 
 
-// Character limitaion 
-function limit(element)
-{
-    const element = getElementById(title);
-    var max_chars = 7;
 
-    if(element.value.length > max_chars) {
-        element.value = element.value.substr(0, max_chars);
-    }
 
-}
+

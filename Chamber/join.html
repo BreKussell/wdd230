@@ -56,7 +56,7 @@
         <input type="text" id="emailaddress" placeholder="emailaddress@example.com">
 
         <label for="number" class="cell">Phone Number:</label>
-        <input type="tel" id="number" required>
+        <input type="tel" id="number" onkeypress="return onlyNumbers(event)" required>
         </div>
 
         <div class="business">
