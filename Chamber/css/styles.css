@@ -135,7 +135,8 @@ figure img:hover {
 .name,
 .business,
  .membership,
- .jChamber{ 
+ .jChamber,
+ #thankYou{ 
   background-color: #f2f2f2;
    box-shadow: 1px 1px 10px 1px #050212;
    border: double; 
@@ -271,9 +272,19 @@ padding: 1em;
   border: #050212 double;
 }
 
-form input[type=radio] {
+#NPB, 
+#bronzeB,
+#goldB,
+#silverB{
   display: block;
-  padding: 2em;
+  padding-top: 1em;
+} 
+
+.membership{
+  text-align: left;
+  font-family:"Merienda", cursive; 
+  font-size: 1em;
+  padding: 1em;
 }
 
 
@@ -301,6 +312,13 @@ textarea {
 
 #memInfo {
   display: none;
+}
+
+#thankYou {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  padding: 2em;
 }
  
 

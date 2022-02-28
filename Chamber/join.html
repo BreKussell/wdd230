@@ -63,7 +63,7 @@
         <label for="bName" class="bsuinessN">Business Name:</label>
         <input type="text" id="bName"  required>
         <label for="title">Business Title or Position:</label>
-        <input type="text" id="title">
+        <input type="text" id="title" maxlength = "7"> 
         <a onclick="next()" class="next">Next</a>
         </div>
     
@@ -71,18 +71,26 @@
      <div class="membership" id = "nextButton">
         <h2>Membership Levels</h2>
 
+        <div id="NPB">
     <input type="radio" id="NP"  value="NP">
     <label for="NP">Non Profit</label>
+    </div>
 
+
+    <div id="#bronzeB">
     <input type="radio" id="bronze"  value="bronze">
     <label for="bronze">Bronze</label>
+    </div>
       
+    <div id="#silverB">
     <input type="radio" id="silver" value="silver">
     <label for="silver">Silver</label>
+    </div>
 
-
+    <div id="goldB">
     <input type="radio" id="gold" value="gold">
     <label for="gold">Gold</label>
+    </div>
 
 
     <a onclick="moreInfo()" class ="membershipInfo">Help and Additional Information</a>
@@ -125,16 +133,16 @@
 
                 
          </div>
-         
+
         
     <label for="descriptionOfBusiness" class="textdescription">Describe your business</label>
     <textarea name="descriptionOfBusiness" placeholder="business description" rows="5"></textarea>
         
 
      
-       
+       <br />
 
-         <button class="submit">Submit</button>
+         <button class="submit" onclick="location.href = 'TY.html';" >Submit</button>
         </div>
      </form>
 
