@@ -1,4 +1,6 @@
-const businessData = require('data.json');
+
+
+const businessData = "https://github.com/BreKussell/wdd230/blob/main/data.json";
 
 fetch(businessData)
   .then(function (response) {
