@@ -136,7 +136,8 @@ figure img:hover {
 .business,
  .membership,
  .jChamber,
- #thankYou{ 
+ #thankYou,
+ #BD{ 
   background-color: #f2f2f2;
    box-shadow: 1px 1px 10px 1px #050212;
    border: double; 
@@ -320,5 +321,13 @@ textarea {
   margin: auto;
   padding: 2em;
 }
+
+/* directory ---------------------------------------------------------------------------------------------------*/
+.businessCard {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;;
+  }
  
 
