@@ -62,7 +62,9 @@ const weatherAppInfo = "https://api.openweathermap.org/data/2.5/weather?id=56040
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-   // const desc = jsObject.weather[0].description;
+    console.log(jsObject);
+  const iconsrc= `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
+   const desc = jsObject.weather[0].description;
   // Kelvins 
   let K = jsObject.main.temp;
   // K to F
@@ -77,9 +79,9 @@ fetch(apiURL)
     wind <= 3 ||
     temp >= 50
   ) {
-    message = "Wind Chill:  N/A";
+    message = iconsrc + "<br />" + "Conditions: " + desc + "<br />" +  "Wind Chill:  N/A";
   } else {
-    message = "Wind Chill " + calcWindChill.toFixed(0) + "(°F)";
+    message = iconsrc + "<br />" + "Conditions: " + desc + "<br />" +  "Wind Chill " + calcWindChill.toFixed(0) + "(°F)";
   }
   // Display message in h3
   document.getElementById('windChill').innerHTML = message;
