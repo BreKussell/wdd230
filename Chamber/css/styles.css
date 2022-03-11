@@ -323,11 +323,27 @@ textarea {
 }
 
 /* directory ---------------------------------------------------------------------------------------------------*/
+.listSymbol,
+.gridSymbol {
+  border: double 3px #050212;
+  display: inline-block;
+  text-align: center;
+}
+
 .businessCard {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;;
   }
+
+  .businessCard section {
+    border: 1px solid navy;
+    background-color: lightblue;
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+    }
  
 

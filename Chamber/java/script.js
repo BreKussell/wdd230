@@ -52,13 +52,24 @@ function change()
     else less.value = "read less...";
 }
 
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Weather app
 
 // Wind Chill
-  // temporary stand in for temperature
-  let temp = 45;
-  // temporary stand in for wind speed
-  let wind = 5.0;
+// fetch data
+const weatherAppInfo = "https://api.openweathermap.org/data/2.5/weather?id=5604045&appid=cca4336ed1a11c87c882d80f866b168d";
+fetch(apiURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+   // const desc = jsObject.weather[0].description;
+  // Kelvins 
+  let K = jsObject.main.temp;
+  // K to F
+  let temp = 1.8*(K-273) + 32;
+  // wind
+  kph = jsObject.wind.speed;
+  let wind = kph*0.62;
   // call windChill function
   let calcWindChill = windChill(temp, wind);
   // display output in h3
@@ -70,7 +81,7 @@ function change()
   } else {
     message = "Wind Chill " + calcWindChill.toFixed(0) + "(°F)";
   }
-  // Display message in h3 where id = date
+  // Display message in h3
   document.getElementById('windChill').innerHTML = message;
   
 
@@ -84,5 +95,6 @@ function windChill(temp, wind) {
     0.6215 * t -
     35.75 * Math.pow(w, 0.16) +
     0.4275 * t * Math.pow(w, 0.16);
-  return chill;
 }
+  return chill;
+});
