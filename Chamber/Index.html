@@ -7,6 +7,11 @@
 <link rel="stylesheet" href="css/small.css">
 <link rel="stylesheet" href="css/medium.css">
 <link rel="stylesheet" href="css/large.css">
+<style>
+  figure img:hover {
+    border: hidden;
+  }
+</style>
 </head>
 <body>
     <header>
@@ -89,12 +94,12 @@
 
                 <h2>Weather</h2>
 
-                  <img src="" alt="" id="weathericon" />
-                  <figcaption></figcaption>
-                  <h3>Temperature: <span id="temp"></span> &deg;F</h3>
-                  <h3>Wind Speed: <span id="windSpeed"></span> mph</h3>
-                  <h3>Wind Chill: <span id="chill"></span></h3>
-    
+                <figure><img src="placeholder" alt="" id="weathericon"  style="width: 50%;"/>  
+                <figcaption id="weatherDescription"></figcaption></figure>
+                <h3>Temperature: <span id="temp"></span>&deg;F</h3>
+                <h3>Wind Speed: <span id="speed"></span> mph</h3>
+                <h3>Wind Chill: <span id="chill"></span></h3>
+                <h3>Humidity: <span id="humid"></span>%</h3>
               </div>
     
               <div class="join">

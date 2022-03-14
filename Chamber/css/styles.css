@@ -7,7 +7,12 @@ html {
   background-color: #8BBEB2;
 }
 
-h1, h2, h3, h4, h5 {
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+#weatherDescription {
   font-family: "Merienda", cursive;
   color: #5389CA;
   padding: 0.5em;
