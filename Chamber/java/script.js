@@ -63,10 +63,11 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
+    // Convert Kelvins to Fahrenheit 
     const Ktemp  = jsObject.main.temp.toFixed(0);
     const Ftemp =  1.8*(Ktemp-273) + 32;
     const temp = document.getElementById('temp').textContent = Ftemp.toFixed(0);
-
+    // Fetch data and display in appropriate places
     const iconsrc= `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
     const desc = jsObject.weather[0].description;
     const windSpeed = jsObject.wind.speed;
@@ -76,8 +77,9 @@ fetch(apiURL)
     document.getElementById('weatherDescription').textContent = desc;
     document.getElementById('speed').textContent = windSpeed.toFixed(0);
     document.getElementById('humid').textContent = humid;
+    // Wind chill is empty will fill with result from function
     let windChill = "";
-
+      // set conditions for when wind chill is measured
       if (temp <= 50 && windSpeed > 3) {
             windChill = windchill(temp, windSpeed);
             windChill = `${windChill}&deg;F`;
@@ -86,7 +88,7 @@ fetch(apiURL)
         }
 
         document.getElementById("chill").innerHTML = windChill;
-
+        // calculate wind chill
         function windchill(temp, windSpeed){
             windchill = (35.74 + 0.6215 * temp - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temp * Math.pow(windSpeed, 0.16));
             return  windchill.toFixed(0);
