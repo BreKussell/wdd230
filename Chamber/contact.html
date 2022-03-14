@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chamber</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/small.css">
+<link rel="stylesheet" href="css/medium.css">
+<link rel="stylesheet" href="css/large.css">
+<style>
+@media screen and (max-width: 600px) {
+    #logoBox {
+        height: 5em;
+    }
+}
+</style>
+</head>
+<body>
+    <header>
+        <div id="logoBox">
+          <img src="imgs/logo.png" alt="logo" class="mainLogo">
+          <a href="https://www.facebook.com/" target="_blank"><img src="imgs/fb.png" alt="face book logo" class="logo"></a>
+          <a href="https://www.linkedin.com/" target="_blank"><img src="imgs/linkedIn.png" alt="linkedIn logo" class="logo"></a>
+       
+          <nav  class="mobileNavigation" id="navigation">
+            
+              <a href="javascript:void(0);" class="hamburger" onclick="mobileNav()">&#9776;</a>
+              <a class="active" href="Index.html">Home</a>
+              <a href="discover.html">Discover</a>
+              <a href="#">Directory</a>
+              <a href="join.html">Join</a>
+              <a class="active" href="#">Contact</a>
+            
+        </nav>
+        <h3 id="date"></h3>
+      </div>
+<body>
+    <form class="jform">
+        <div class="jChamber">
+        <h1 style="border-bottom: solid 5px; border-color: #D0F467;">Join the Chamber</h1>
+       </div>
+
+        <div class="name">
+        <label for="fName">First Name:</label>
+       <input type="text" id="fName"  required>
+
+       <label for="lName">Last Name:</label>
+       <input type="text" id="lName"  required>
+
+       </div>
+
+      
+       <div class="contact">
+
+       <label for="emailaddress">Email Address:</label>
+       <input type="text" id="emailaddress" placeholder="emailaddress@example.com">
+
+       <label for="number" class="cell">Phone Number:</label>
+       <input type="tel" id="number" onkeypress="return onlyNumbers(event)" required>
+       </div>
+
+        <div class="contact">
+       <label for="descriptionOfBusiness" class="textdescription">Reasons For Contacting.</label>
+       <textarea name="descriptionOfBusiness" placeholder="Reasons for Contacting" rows="5"></textarea>
+            <br />
+       <button class="submit" onclick="">Submit</button>
+       </div>
+       </form>
+    
+</body>
+<footer>
+    <img src="imgs/logo.png" alt="logo" class="mainLogo" id="footerMainLogo">
+    <div class="imfo">  
+      <a id="email">imfoEmailaddress@email.com</a> 
+      <a id="phone">x+(xxx)-xxx-xxxx</a>
+      <a id="location" href = "https://www.google.com/maps/"  onclick="window.open('https://www.google.com/maps/','popup','width=600,height=600');">
+        Location</a>
+      
+    </div>
+
+    <div class="update">  
+    </div>
+  </footer>
+  
+</html>

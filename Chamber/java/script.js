@@ -64,7 +64,7 @@ fetch(apiURL)
   .then((jsObject) => {
     console.log(jsObject);
     // Convert Kelvins to Fahrenheit 
-    const Ktemp  = jsObject.main.temp.toFixed(0);
+    const Ktemp  = jsObject.main.temp;
     const Ftemp =  1.8*(Ktemp-273) + 32;
     const temp = document.getElementById('temp').textContent = Ftemp.toFixed(0);
     // Fetch data and display in appropriate places

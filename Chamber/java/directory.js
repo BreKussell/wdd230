@@ -1,56 +1,47 @@
-const businessData = "https://brekussell.github.io/wdd230/data.json";
+const requestURL = "https://brekussell.github.io/wdd230/data.json";
 
-fetch(businessData)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-    const businesses = jsonObject['businesses'];
-    businesses.forEach(displayBusiness);
-
-  });
-
-  const cards = document.querySelector('div.card');
-const listButton = document.querySelector(".listSymbol");
-const gridButton = document.querySelector(".gridSymbol");
+const cards = document.querySelector('div.cards-2');
+const listButton = document.querySelector("#list-button");
+const gridButton = document.querySelector("#grid-button");
 
 fetch(requestURL)
     .then(function (response) {
         return response.json();
     })
     .then(function (jsonObject) {
-        const businesses = jsonObject['businesses'];
-        // console.table(jsonObject);
-        businesses.forEach(displayBusinesses);
+        const companies = jsonObject['companies'];
+        companies.forEach(displayCompanies);
     });
 
-function displayBusinesses(business) {
+function displayCompanies(company) {
   let card = document.createElement('section');
 
-  //image
+  //img
   let image = document.createElement('img');
-  image.src = business.imageurl;
-  image.setAttribute('alt', business.name);
+  image.src = company.image;
+  image.setAttribute('alt', company.name);
   card.appendChild(image);
 
-  //Business name as h
-  let h = document.createElement('h');
-  h.textContent = business.name;
-  card.appendChild(h);
+  //h2 name
+  let h3 = document.createElement('h3');
+  h3.textContent = company.name;
+  card.appendChild(h3);
 
-  //Business address as p
+  //p address
   let p1 = document.createElement('p');
-  p1.textContent = business.address;
+  p1.textContent = company.address;
   card.appendChild(p1);
 
-  //Business Phone number as p 
+  //p phone
   let p2 = document.createElement('p');
-  p2.textContent = business.phone;
+  p2.textContent = `Phone: ${(company.phone ==null) ? 'Not Available': company.phone}`;
   card.appendChild(p2);
 
-  //Business website as <a><a/>
+  //p website
   let a = document.createElement('a');
-  a.textContent = business.website;
+  a.setAttribute("href", company.website);
+  a.setAttribute('target', '_blank');
+  a.textContent = company.website;
   card.appendChild(a);
 
   cards.appendChild(card);
