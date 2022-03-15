@@ -357,6 +357,7 @@ textarea {
 .cards section {
   display: block;
   margin: auto;
+  text-align: center;
   padding: 1em;
   background-color: #f2f2f2;
   width: 90%;
