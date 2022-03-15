@@ -328,27 +328,61 @@ textarea {
 }
 
 /* directory ---------------------------------------------------------------------------------------------------*/
-.listSymbol,
-.gridSymbol {
-  border: double 3px #050212;
-  display: inline-block;
+.viewOptions button{
+  display: flex;
   text-align: center;
+  padding: 1em;
+  margin: auto;
+}
+.viewOptions button {
+  display: inline; 
+  margin: 0 auto;
+  padding: 0.5em;
+  width: 5%;
+  font-size: 1.5em;
+  background-color: #5389CA;
+  color: #f2f2f2;
+  font-family:"Merienda", cursive;  
+  box-shadow: 1px 1px 10px 1px #050212;
+  border: #050212 double 2px;
+}
+.cardsList {
+  display: none;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5em;
+}
+.cards section {
+  display: block;
+  margin: auto;
+  padding: 1em;
+  background-color: #f2f2f2;
+  width: 90%;
+  height: auto;
+  border: #050212 double 5px;
+  box-shadow: 1px 1px 10px 1px #050212;
+}
+.cards section a {
+  cursor: pointer;
+  color: #5389CA;
+  font-family: "Merienda", cursive;
+  text-decoration: underline;
 }
 
-.businessCard {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;;
-  }
+.showList {
+  display: block;
+  width: 75%;
+  text-align: left;
+  padding: 1em;
+  background-color: #f2f2f2;
+  border: #050212 double 5px;
+  box-shadow: 1px 1px 10px 1px #050212;
+  margin: auto;
+}
+.showList img {
+  display: none;
+}
 
-  .businessCard section {
-    border: 1px solid navy;
-    background-color: lightblue;
-    padding: 30px;
-    text-align: center;
-    width: 300px;
-    margin: 20px;
-    }
- 
 

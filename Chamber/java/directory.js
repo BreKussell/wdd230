@@ -1,57 +1,56 @@
 const requestURL = "https://brekussell.github.io/wdd230/data.json";
 
-const cards = document.querySelector('div.cards-2');
-const listButton = document.querySelector("#list-button");
-const gridButton = document.querySelector("#grid-button");
+const cards = document.querySelector('.cards');
+
 
 fetch(requestURL)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (jsonObject) {
-        const companies = jsonObject['companies'];
-        companies.forEach(displayCompanies);
-    });
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    const companies = jsonObject['companies'];
+    companies.forEach(displayCompanies);
+  });
 
 function displayCompanies(company) {
+  // Create elements to add to the document
   let card = document.createElement('section');
+  let name = document.createElement('h2');
+  let img = document.createElement('img');
+  let address = document.createElement('h3');
+  let phone = document.createElement('h3');
+  let website = document.createElement('a');
 
-  //img
-  let image = document.createElement('img');
-  image.src = company.image;
-  image.setAttribute('alt', company.name);
-  card.appendChild(image);
+  // TextContent property of the name element to contain the company's name
+  name.innerHTML = `${company.name}`;
+  address.textContent = `${company.address}`;
+  phone.textContent = `${company.phone}`;
+  website.textContent = `${company.website}`;
 
-  //h2 name
-  let h3 = document.createElement('h3');
-  h3.textContent = company.name;
-  card.appendChild(h3);
+  // Image attributes
+  img.setAttribute('src', company.imageurl);
+  img.setAttribute('alt', `${company.name}´s image`);
+  img.setAttribute('loading', 'lazy');
 
-  //p address
-  let p1 = document.createElement('p');
-  p1.textContent = company.address;
-  card.appendChild(p1);
+  // Add/append
+  card.appendChild(name);
+  card.appendChild(img);
+  card.appendChild(address);
+  card.appendChild(phone);
+  card.appendChild(website);
 
-  //p phone
-  let p2 = document.createElement('p');
-  p2.textContent = `Phone: ${(company.phone ==null) ? 'Not Available': company.phone}`;
-  card.appendChild(p2);
-
-  //p website
-  let a = document.createElement('a');
-  a.setAttribute("href", company.website);
-  a.setAttribute('target', '_blank');
-  a.textContent = company.website;
-  card.appendChild(a);
-
+  // Add/append the existing HTML div with the cards class with the section(card)
   cards.appendChild(card);
-
 }
 
-listButton.addEventListener("click", ()=> {
-    cards.classList.replace("grid-view", "list-view")
-});
 
-gridButton.addEventListener("click", ()=> {
-    cards.classList.replace("list-view", "grid-view")
-});
+
+const cardView = document.querySelector('#cardsView');
+const listView = document.querySelector('#listView');
+
+cardView.addEventListener('click', () => {cards.classList.add('cards')}, once="true");
+cardView.addEventListener('click', () => {cards.classList.remove('showList')}, once="true");
+
+listView.addEventListener('click', () => {cards.classList.add('showList')}, once="true");
+listView.addEventListener('click', () => {cards.classList.remove('cards')}, once="true");
