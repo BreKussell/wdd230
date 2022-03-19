@@ -1,3 +1,14 @@
+// mobile navigation 
+function mobileNav() {
+  let x = document.getElementById("navigation");
+  if (x.className === "mobileNavigation") {
+    x.className += " responsive";
+  } else {
+    x.className = "mobileNavigation";
+  }
+}
+
+
 const requestURL = "https://brekussell.github.io/wdd230/data.json";
 
 const cards = document.querySelector('.cards');
@@ -8,13 +19,13 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    console.table(jsonObject);  
     const companies = jsonObject['companies'];
     companies.forEach(displayCompanies);
   });
 
 function displayCompanies(company) {
-  // Create elements to add to the document
+  // create card elements
   let card = document.createElement('section');
   let name = document.createElement('h2');
   let img = document.createElement('img');
@@ -28,7 +39,7 @@ function displayCompanies(company) {
   phone.textContent = `${company.phone}`;
   website.textContent = `${company.website}`;
 
-  // Image attributes
+  // Image 
   img.setAttribute('src', company.imageurl);
   img.setAttribute('alt', `${company.name}´s image`);
   img.setAttribute('loading', 'lazy');
@@ -45,12 +56,23 @@ function displayCompanies(company) {
 }
 
 
-
-const cardView = document.querySelector('#cardsView');
-const listView = document.querySelector('#listView');
+// button functions
+const cardView = document.getElementById('cardsView');
+const listView = document.getElementById('listView');
 
 cardView.addEventListener('click', () => {cards.classList.add('cards')}, once="true");
 cardView.addEventListener('click', () => {cards.classList.remove('showList')}, once="true");
 
 listView.addEventListener('click', () => {cards.classList.add('showList')}, once="true");
 listView.addEventListener('click', () => {cards.classList.remove('cards')}, once="true");
+
+if (($(window).width() < 1000) && ($(window).width() > 600)) {
+  listView.addEventListener('resize',() => {cards.classList.add('showList')});
+  listView.addEventListener('onload',() => {cards.classList.add('showList')});
+
+  listView.addEventListener('resize',() => {cards.classList.add('showList')});
+  listView.addEventListener('onload',() => {cards.classList.add('showList')});
+  
+} else {
+  Window.addEventListener('onload',() => {cards.classList.add('cards')});
+}

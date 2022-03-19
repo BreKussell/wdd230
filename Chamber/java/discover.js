@@ -9,12 +9,6 @@ function mobileNav() {
 }
 
 
-
-//Date.now
-//let difference = currDate - prevDate
-//console.log(difference);
-//let daysDifference = Math.floor(difference/1000/60/60/24);
-
 // local storage 
 function displayCounter() {
   // check if the localStorage object is supported by the browser
@@ -24,16 +18,13 @@ function displayCounter() {
       var container = document.getElementById('container');
       if (!container) { return };
       // display the counter on screen
-      container.innerHTML = 'Hey, you visited this page ' + localStorage['counter'] + ' times.';
+      container.innerHTML = 'Times visited: ' + localStorage['counter'];
   }
 }
 // call the 'displayCounter()' function when the web page is loaded
 window.onload = function () {
   displayCounter();
 }
-
-
-
 
 
 // lazy loading 

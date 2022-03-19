@@ -10,6 +10,10 @@
   #nav { 
     flex: 1 1 33.33%; 
   } 
+  #logoBox {
+    height: auto;
+    width: 100%;
+  }
 
 
   /*grid*/
@@ -43,5 +47,17 @@
     .event { grid-area: event; }
     
     .weather { grid-area: weather; }  
+
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 0.5em;
+    }
+
+    .viewOptions button {
+      display: inline; 
+      margin: 0 auto;
+      width: auto;
+    }
 
 }

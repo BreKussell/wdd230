@@ -328,17 +328,12 @@ textarea {
 }
 
 /* directory ---------------------------------------------------------------------------------------------------*/
-.viewOptions button{
-  display: flex;
-  text-align: center;
-  padding: 1em;
-  margin: auto;
-}
 .viewOptions button {
   display: inline; 
   margin: 0 auto;
   padding: 0.5em;
   width: 5%;
+  padding: 1em;
   font-size: 1.5em;
   background-color: #5389CA;
   color: #f2f2f2;
@@ -365,7 +360,7 @@ textarea {
   border: #050212 double 5px;
   box-shadow: 1px 1px 10px 1px #050212;
 }
-.cards section a {
+.cards section a, .showList a {
   cursor: pointer;
   color: #5389CA;
   font-family: "Merienda", cursive;
@@ -385,5 +380,10 @@ textarea {
 .showList img {
   display: none;
 }
+.showList:nth-child(3n+0){
+border-bottom: #D0F467 solid 5px;
+ }
+
+ 
 
 

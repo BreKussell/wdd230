@@ -134,4 +134,15 @@ margin: auto;
 .lazy {
   width: 50%;
 }
+
+.cards {
+  display: block;
+}
+
+
+.viewOptions button {
+  display: inline; 
+  margin: 0 auto;
+  width: auto;
+}
 }
