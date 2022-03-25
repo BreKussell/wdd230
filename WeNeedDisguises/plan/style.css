@@ -1,0 +1,228 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
+@import url("https://fonts.googleapis.com/css?family=Merienda");
+
+/* Media queries______________________________________________________________________________*/
+@media screen and (min-width: 1000px) {
+  .hamburger {
+    display: none;
+  }
+}
+/*phone*/
+@media screen and (max-width: 600px) {
+  /* Navigation*/
+.mobileNavigation a:not(:first-child) {display: none;}
+.mobileNavigation a.hamburger {
+  float: left;
+  display: block;
+}
+.mobileNavigation.responsive {position: relative;}
+
+.mobileNavigation.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+}
+
+.mobileNavigation a {
+  font-size: 1em;
+  line-height: 2em;
+}
+
+.mainLogo {
+  display: block;
+}
+
+/*tablet*/
+@media all and (max-width: 1000px) { 
+  #nav ul { flex-wrap: wrap; }
+  #nav li { flex: 1 1 50%; } 
+  #nav { flex: 1 1 33.33%; } 
+
+  #content {
+    text-align: center;
+  }
+  body {
+    width: 95%;
+  }
+  #highlight1, #highlight2 #businessOwner, #new {
+    display: block;
+    margin: auto;
+  }
+  }
+
+/*Navigation__________________________________________________________________________________________________*/
+#logoBox, footer {
+  background-color: #050212;
+  height: auto;
+  padding: 0.5em;
+}
+
+.mobileNavigation {
+    overflow: hidden;
+    background-color: #050212;
+  }
+  
+  .mobileNavigation a {
+    float: left;
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: "Lucida Handwriting", Cursive;
+    font-weight: bold;
+  }
+  
+  .mobileNavigation a:hover, 
+  #location:hover {
+    cursor: pointer;
+    border-bottom: solid 5px;
+    border-color: #008080;
+    color: #C3B9EB;;
+  }
+  
+  .mobileNavigation a.active {
+    border-bottom: solid 5px;
+    border-color: #008080;
+    color: #C3B9EB;
+  }
+
+
+
+  /*General Styling____________________________________________________________________________________*/
+html {
+  background: radial-gradient(#011214 60%, #2993CD);
+  
+  
+}
+  body {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  #content {
+    background-color:#FFFFFF;
+  }
+  
+  main {
+    background-color:#FFFFFF ;
+    padding: 1em;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: "Lucida Handwriting", Cursive;
+    color: #2993CD;
+    padding: 0.5em;
+  }
+  
+  p,
+  .top {
+    color:#0A0B0A;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5em;
+    max-width: 1000px;
+  }
+  
+  #content a {
+    color:#008080;
+    text-decoration: none;
+  }
+#content a:hover {
+  color: #C3B9EB;
+  text-decoration: underline;
+}
+
+/*Target Audience_____________________________________________________________________________________________*/
+#people{
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 1em 1em; 
+  grid-template-areas: 
+    "person1 person2"; 
+}
+
+#person1 p, 
+#hh p {
+  width: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#person1 { grid-area: person1; }
+#person2 { grid-area: person2; }
+
+/*Color Scheme___________________________________________________________________________________________________*/
+#primary {
+  color: #011214;
+  background-color: #2993CD;
+  padding: 1em;
+  border: solid;
+  border-color: #011214;
+}
+
+#secondary {
+    color: #011214;
+    background-color: #FFFFFF;
+    padding: 1em;
+    border: solid;
+    border-color: #011214; 
+}
+
+#hh {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 1em 1em; 
+  grid-template-areas: 
+    "highlight1 highlight2"; 
+}
+
+#highlight1 {
+    color: #011214;
+    background-color: #008080;
+    padding: 1em;
+    border: solid;
+    border-color: #011214; 
+    grid-area: highlight1; 
+}
+
+#highlight2 {
+  color: #011214;
+  background-color: #C3B9EB;
+  padding: 1em;
+  border: solid;
+  border-color: #011214; 
+  grid-area: highlight2; 
+}
+
+#text {
+  color:#FAFAFF;
+  background-color: #011214;
+  border:solid;
+  border-color: #011214;
+  padding: 1em;
+}
+
+
+/*Images__________________________________________________________________*/
+img {
+  width:50%;
+  padding: 0.5em;
+  display: block;
+}
+
+#wireframe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+#wireframe img {
+  width: 70%;
+  padding: 1em;
+}
+#wirefram div {
+  margin: auto;
+}
