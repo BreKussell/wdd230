@@ -226,3 +226,7 @@ img {
 #wirefram div {
   margin: auto;
 }
+
+.explanation {
+  text-align: center;
+}
