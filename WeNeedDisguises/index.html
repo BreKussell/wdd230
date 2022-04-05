@@ -35,13 +35,9 @@
       <div class="picContainer">
 
         <div class="mySlides fade">
-          <img src="images/banner.png" >
-        </div>
-        
-        <div class="mySlides fade">
           <img src="images/banner2.png" >
         </div>
-        
+
         <div class="mySlides fade">
           <img src="images/banner3.png" >
         </div>
@@ -49,9 +45,13 @@
         <div class="mySlides fade">
           <img src="images/banner4.png">
         </div>
+
+        <div class="mySlides fade">
+          <img src="images/banner.png" >
+        </div>
         
         <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
+        <a class="next" onclick="plusSlides(+1)">❯</a>
         
         <br />
         
@@ -79,16 +79,19 @@
 
         <div class="imageSection">
           <picture>
-        <img src= "images/WEBP/placeHolder.webp"  data-src="images/WEBP/mickey.webp"/>
+        <img src= "images/WEBP/placeHolder.webp"  data-src="images/WEBP/mickey.webp" class="lazy" alt="WNDC Mickey"/>
         </picture>
+
         <picture>
-        <img src= "images/WEBP/placeHolder.webp"  data-src="images/WEBP/ven.webp"/>
+        <img src= "images/WEBP/placeHolder.webp"  data-src="images/WEBP/ven.webp" class="lazy" alt="WNDC Ventus"/>
         </picture>
+
         <picture>
-        <img src= "images/WEBP/placeHolder.webp"  data-src="images/WEBP/riku.webp">
+        <img src= "images/WEBP/placeHolder.webp"  data-src="images/WEBP/riku.webp" class="lazy" alt="WNDC Riku"/>
         </picture>
+
         <picture>
-        <img src= "images/WEBP/placeHolder.webp"  data-src="images/WEBP/sora.webp"/>
+        <img src= "images/WEBP/placeHolder.webp"  data-src="images/WEBP/sora.webp" class="lazy" alt="WNDC"/>
         </picture>
         </div>
 
@@ -107,21 +110,46 @@
         <h2>Notable Awards:</h2>
         <h3>2018:</h3>
 
-        <h3>2019:</h3>
+            <h4>Snake River Fandom Con:</h4>
+            <ul>
+           <li> 1st place Masters, Best in Show, and creativity Caption</li>
+        </ul>
+
+        <h3>2019:</h3>        
+         <h4> Salt Lake FanX Comic Convention:</h4>
+         <ul>
+          <li>
+          3rd Place Group Category 
+        </li>
+        </ul>
 
         <h3>2020:</h3>
+        
+          <h4>Idaho Digicon:</h4>
+        <ul>
+          <li> Best in Show</li>
+        </ul>
 
         <h3>2021:</h3>
-
+            <h4>Crunchroll Himes Cosplay Cup:</h4>
+            <ul>
+           <li> Best in Show</li>
+           </ul>
+          
+            <h4>Salt Lake FanX Comic Comic Convention:</h4>
+            <ul>
+            <li>Judges award- Best Needle Work</li>
+            <li>2nd Place Masters Category</li>
+        </ul>
 
       </div>
 
       <div class="quoteAPI">
-        <p style="margin: auto;">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et scelerisque augue. 
-          Suspendisse posuere velit at velit sagittis, vitae ornare massa pulvinar. Nunc felis erat, 
-         
-        </p>
+        <h3 class="quote" style="text-align:center;">
+          Cosplaying is not limited to any age, gender, race, or physical physique.
+Anyone can do it!
+
+        </h3>
       </div>
 
     </div>
@@ -132,5 +160,5 @@
       </footer>
     </div>
     
-    <script src="java/homeScripts.js"></script>
+    <script src="scripts/homeScripts.js"></script>
   </html>

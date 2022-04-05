@@ -85,8 +85,15 @@ html {
     padding: 1em;
     padding-bottom: 1.5em;
     margin: auto;
+
   }
   
+  .award ul li,
+  .award h4 {
+    color:#0A0B0A;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+  }
 .container a {
     color:#008080;
     text-decoration: none;
@@ -114,16 +121,15 @@ img {
   padding-bottom: 1em;
 }
 
-.award {
-  height: 300px;
-  max-height: 300px;
-  overflow-y: scroll;
-}
+
 
 /*Slide show Container____________________________________________________________________________________________________________________*/
 .mySlides {display: none}
 .mySlides img {
-				width:100%
+				width:100%;
+        border: none;
+        box-shadow: none;
+        padding: auto;
                 }
 
 /* Slideshow container */
@@ -134,20 +140,21 @@ img {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev, 
+.next {
   cursor: pointer;
-  position: absolute;
   top: 50%;
   width: auto;
+ /* position: absolute;*/
   padding: 16px;
-  margin-top: -22px;
-  color: white;
+  color: #FFFFFF;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+
 
 /* Position the "next button" to the right */
 .next {
@@ -157,7 +164,7 @@ img {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: #0A0B0A;
 }
 
 
@@ -169,14 +176,15 @@ img {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #C3B9EB;
+  color: #C3B9EB;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #2993CD;
 }
 
 /* Fading animation */
