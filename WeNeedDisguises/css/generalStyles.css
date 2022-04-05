@@ -1,0 +1,192 @@
+/*Navigation__________________________________________________________________________________________________*/
+#logoBox, footer {
+  background-color: #050212;
+  height: auto;
+  padding: 0.5em;
+  width: 100%;
+}
+
+.mobileNavigation {
+    overflow: hidden;
+    background-color: #050212;
+  }
+  
+  .mobileNavigation a {
+    float: left;
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: "Lucida Handwriting", Cursive;
+    font-weight: bold;
+  }
+  
+  .mobileNavigation a:hover, 
+  #location:hover {
+    cursor: pointer;
+    border-bottom: solid 5px;
+    border-color: #008080;
+    color: #C3B9EB;;
+  }
+  
+  .mobileNavigation a.navActive {
+    border-bottom: solid 5px;
+    border-color: #008080;
+    color: #C3B9EB;
+  }
+
+  #mainLogo {
+    display: flex;
+    float: left;
+    width: 15%;
+    padding: 0.75em;
+   
+  }
+
+  .logo {
+    height: 50px;
+    display: flex;
+    float: right;
+    padding: 0.25em;
+    margin-top: 0%;
+  }
+.logo,
+#mainLogo {
+  border: none;
+    box-shadow: none;
+}
+.logo:hover {
+border-bottom: solid 5px;
+border-color: #008080;
+}
+
+  /*General Styling____________________________________________________________________________________*/
+html {
+  background-color: #2993CD; /*for browsers that don't support gradient*/
+  background-image: linear-gradient(to right, #0A0B0A, #2993CD, #0A0B0A);
+}
+  body {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: "Lucida Handwriting", Cursive;
+    color: #2993CD;
+    padding: 0.5em;
+    padding-left: 1em;
+  }
+  
+  p{
+    color:#0A0B0A;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em;
+    padding-bottom: 1.5em;
+    margin: auto;
+  }
+  
+.container a {
+    color:#008080;
+    text-decoration: none;
+  }
+.container a:hover {
+  color: #C3B9EB;
+  text-decoration: underline;
+}
+
+img {
+  box-shadow: 1px 1px 8px 1px #2993CD;
+  border: double 4px #0A0B0A;
+}
+
+/* Sections general styling _______________________________________________________________________________________*/
+.picContainer,
+.homeContent, 
+.award, 
+.quoteAPI { 
+  background-color: #FFFFFF; 
+  border: double 4px #0A0B0A;
+}
+.container {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.award {
+  height: 300px;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+/*Slide show Container____________________________________________________________________________________________________________________*/
+.mySlides {display: none}
+.mySlides img {
+				width:100%
+                }
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+

@@ -1,0 +1,96 @@
+{
+    "businesses": [
+        {
+            "order" : 1,
+            "imageurl": "images/Braveheart",
+            "placeholderimageurl": "images/placeHolder.png", 
+            "description": "Materials: Eva foam, Translucent foam, PVC board, PVC Pipe, 3D print, Worbla, LED lights" 
+        },
+        {
+            "order" : 2,
+            "imageurl": "images/Shooting_Star.jpg",
+            "placeholderimageurl": "images/placeHolder.png", 
+            "description": "Materials: Eva foam, LED foam, Resin Casting, PVC board, PVC Pipe, 3D print, LED lights" 
+        },
+        {
+            "order" : 3,
+            "imageurl": "images/Starcluster.jpg",
+            "placeholderimageurl": "images/placeHolder.png", 
+            "description": "Materials: LED foam, PVC Pipe, 3D print, LED lights, Resin Casting" 
+        },
+        {
+            "order" : 4,
+            "imageurl": "images/Lost_Memory.jpg",
+            "placeholderimageurl": "images/placeHolder.png", 
+            "description": "Materials: Eva foam, LED foam, Resin Casting, PVC board, PVC Pipe, 3D print, LED lights" 
+        },
+        {
+            "order" : 5,
+            "imageurl": "images/Master Defender.jpg",
+            "placeholderimageurl": "images/placeHolder.png", 
+            "description": "Materials: Wooden Dowel, 3D print, LED lights" 
+        },
+        {
+            "order" : 6,
+            "imageurl": "images/Hylian_sheild.jpg",
+            "placeholderimageurl": "images/placeHolder.png", 
+            "description": "Materials: EVA foam" 
+        },
+        {
+            "order" : 7,
+            "imageurl": "images/pirateRiffle.jpg",
+            "placeholderimageurl": "images/placeHolder.png", 
+            "description": "Materials: 3D print" 
+        },
+        {
+            "order" : 8,
+            "imageurl": "images/charge.png",
+            "placeholderimageurl": "images/placeHolder.png", 
+            "description": ""
+            
+        },
+        {
+            "order" : 9,
+            "imageurl": "images/SoraAndElizabeth.jpg",
+            "placeholderimageurl": "images/placeHolder.png", 
+            "description": "Photo shoot at Anime Banzai"
+        },
+        {
+            "order" : 10,
+            "imageurl": "images/tug and titania.jpg",
+            "placeholderimageurl": "images/placeHolder.png", 
+            "description": "Home Photo Shoot"
+        },
+        {
+            "order" : 11,
+            "imageurl": "images/TugWave.png",
+            "placeholderimageurl": "images/placeHolder.png", 
+            "description": ""
+        },
+        {
+            "order" : 12,
+            "imageurl": "images/selfie.png",
+            "placeholderimageurl": "images/placeHolder.png", 
+            "description": "At Salt Lake FanX"
+        },
+        {
+            "order" : 13,
+            "imageurl": "images/Agitha_W_Tug.png",
+            "placeholderimageurl": "images/placeHolder.png", 
+            "description": ""
+        },
+        {
+            "order" : 14,
+            "imageurl": "images/PuffyCheeks.png",
+            "placeholderimageurl": "images/placeHolder.png", 
+            "description": ""
+        },
+        {
+            "order" : 15,
+            "imageurl": "images/SoraWithStormFlag.jpg",
+            "placeholderimageurl": "images/placeHolder.png", 
+            "description": ""
+        }
+        
+    ]
+}
