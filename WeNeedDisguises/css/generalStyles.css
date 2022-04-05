@@ -198,3 +198,22 @@ img {
   to {opacity: 1}
 }
 
+/*Image Gallery_________________________________________________________________________________________________________________*/
+
+.cards {
+  width: 95%;
+}
+
+.cards section {
+  margin: auto;
+  text-align: center;
+  padding: 1em;
+  background-color: #f2f2f2;
+  border: #050212 double 5px;
+  box-shadow: 1px 1px 10px 1px #050212;
+}
+
+.cards img {
+  margin: auto;
+  width: 90%;
+}

@@ -68,3 +68,15 @@ if('IntersectionObserver' in window) {
         loadImages(img);
     });
 }
+
+// Random quote
+function randomQuote() {
+  const url="../quote-data.json";
+  $.getJSON(url, function(response) {
+  var arrayRandom = Math.floor(Math.random() * response.length);
+  $('.modal-title').html(response[arrayRandom].quote);
+  $('.modal-body p').html(response[arrayRandom].citation);      
+}); //end getJSON
+}
+randomQuote();
+document.getElementById("quote").innerHTML = randomQuote;
