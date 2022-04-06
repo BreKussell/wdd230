@@ -46,7 +46,7 @@
   }
 
   .logo {
-    height: 50px;
+    height: 40px;
     display: flex;
     float: right;
     padding: 0.25em;
@@ -79,12 +79,14 @@ html {
     padding-left: 1em;
   }
   
-  p{
+  p, 
+  figcaption{
     color:#0A0B0A;
     font-family: Arial, Helvetica, sans-serif;
     padding: 1em;
     padding-bottom: 1.5em;
     margin: auto;
+    max-width: 900px;
 
   }
   
@@ -103,7 +105,9 @@ html {
   text-decoration: underline;
 }
 
-img {
+img, 
+table,
+figure {
   box-shadow: 1px 1px 8px 1px #2993CD;
   border: double 4px #0A0B0A;
 }
@@ -112,11 +116,20 @@ img {
 .picContainer,
 .homeContent, 
 .award, 
-.quoteAPI { 
+.quoteAPI,
+.tool,
+.material,
+.software,
+.start,
+.question,
+.useful,
+.Formcontainer { 
   background-color: #FFFFFF; 
   border: double 4px #0A0B0A;
 }
-.container {
+.container, 
+.Learncontainer,
+.Imagecontainer {
   padding-top: 1em;
   padding-bottom: 1em;
 }
@@ -202,9 +215,8 @@ img {
 .cards section {
   margin: auto;
   padding: 1em;
-  background-color: #f2f2f2;
-  border: #050212 double 5px;
-  box-shadow: 1px 1px 10px 1px #050212;
+  background-color: #FFFFFF;
+  border: #0A0B0A double 5px;
 }
 
 .cards img {
@@ -212,50 +224,168 @@ img {
   width: 90%;
 }
 
+.cards{
+  margin: auto;
+}
+
 
 /* Learn______________________________________________________________________________________________*/
-.container {  display: grid;
+.Learncontainer {  display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
   gap: 2em 2em;
   grid-auto-flow: row;
   grid-template-areas:
+    "useful"
     "tool"
-    "material"
+    "marterial"
     "software"
     "start";
+    margin: auto;
+    width: 90%;
 }
 
-#tool { grid-area: tool; }
+.tool { grid-area: tool; }
 
-#material { grid-area: material; }
+.marterial { grid-area: marterial; }
 
-#software { grid-area: software; }
+.software { grid-area: software; }
 
-#start { grid-area: start; }
+.start { grid-area: start; }
+
+.useful { grid-area: useful; }
+
 
 .collapsible {
-  background-color: #777;
-  color: white;
+  background-color: #0A0B0A;
+  color: #FFFFFF;
   cursor: pointer;
-  padding: 18px;
+  padding: 0.5em;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 1.5em;
+  font-family:"Lucida Handwriting", Cursive;
 }
 
-.active, .collapsible:hover {
-  background-color: #555;
+.collapsible.active, 
+.collapsible:hover,
+.ask:hover {
+  cursor: pointer;
+  background-color: #C3B9EB;
+  border: #008080 double 4px;
 }
 
 .content {
-  padding: 0 18px;
+  padding: 0.5em;
   display: none;
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #FFFFFF;
 }
+
+table {
+  width: 90%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin:auto;
+}
+
+th,
+.newSection {
+  background-color:#2993CD;
+  color: #FFFFFF;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+td {
+  font-size: 1em;
+}
+
+th,
+td {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.5em;
+  border:1px solid #0A0B0A;
+}
+
+.list {
+  color:#0A0B0A;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  justify-content: center;
+}
+
+
+
+figure{
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: auto auto; 
+  gap: 2em 2em; 
+  grid-template-areas: 
+    "figimg figimg"
+    "caption caption"; 
+}
+.caption { grid-area: caption; }
+.figimg { grid-area: figimg; }
+
+
+figure img {
+  width: 95%;
+  margin: auto;
+  box-shadow: none;
+}
+
+figure img:hover {
+  width: 150%;
+  z-index: +1;
+}
+
+/*Questions______________________________________________________________*/
+form input[type=text],
+form textarea {
+  width: 90%;
+  padding: 1em;
+  margin: 8px 0;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+  border: #050212 double;
+}
+
+form label{
+  font-family:"Lucida Handwriting", Cursive;
+  padding: 1em;
+  float: left;
+  display: block;
+}
+form label::after{
+    content:" *";
+    color: red;
+  } 
+
+  .Formcontainer {
+    width: 90%;
+    margin: auto;
+  }
+
+  .ask {
+    position: relative;
+    margin-left: 5%;
+    font-family:"Lucida Handwriting", Cursive;
+    font-size: 1em;
+    padding: 0.5em;
+    width: 10%;
+    background-color: #0A0B0A;
+    color: #FFFFFF;
+  }
+
+
+
 

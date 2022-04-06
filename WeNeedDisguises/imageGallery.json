@@ -5,56 +5,64 @@
             "imageurl": "images/Braveheart",
             "placeholderimageurl": "images/placeHolder.png", 
             "description": "Materials: Eva foam, Translucent foam, PVC board, PVC Pipe, 3D print, Worbla, LED lights" ,
-            "alt": "Braveheart"
+            "alt": "Braveheart",
+            "class": "lazy"
         },
         {
             "order" : 2,
             "imageurl": "images/Shooting_Star.jpg",
             "placeholderimageurl": "images/placeHolder.png", 
             "description": "Materials: Eva foam, LED foam, Resin Casting, PVC board, PVC Pipe, 3D print, LED lights",
-            "alt": "Shooting Star" 
+            "alt": "Shooting Star",
+            "class": "lazy" 
         },
         {
             "order" : 3,
             "imageurl": "images/Starcluster.jpg",
             "placeholderimageurl": "images/placeHolder.png", 
             "description": "Materials: LED foam, PVC Pipe, 3D print, LED lights, Resin Casting",
-            "alt": "Starcluster"
+            "alt": "Starcluster",
+            "class": "lazy"
         },
         {
             "order" : 4,
             "imageurl": "images/Lost_Memory.jpg",
             "placeholderimageurl": "images/placeHolder.png", 
             "description": "Materials: Eva foam, LED foam, Resin Casting, PVC board, PVC Pipe, 3D print, LED lights", 
-            "alt": "Lost Memory"
+            "alt": "Lost Memory",
+            "class": "lazy"
         },
         {
             "order" : 5,
             "imageurl": "images/Master Defender.jpg",
             "placeholderimageurl": "images/placeHolder.png", 
             "description": "Materials: Wooden Dowel, 3D print, LED lights",
-            "alt": "Master Defender"
+            "alt": "Master Defender",
+            "class": "lazy"
         },
         {
             "order" : 6,
             "imageurl": "images/Hylian_sheild.jpg",
             "placeholderimageurl": "images/placeHolder.png", 
             "description": "Materials: EVA foam",
-            "alt": "Hylian Shield"
+            "alt": "Hylian Shield",
+            "class": "lazy"
         },
         {
             "order" : 7,
             "imageurl": "images/pirateRiffle.jpg",
             "placeholderimageurl": "images/placeHolder.png", 
             "description": "Materials: 3D print",
-            "alt": "Pirate Riffle"
+            "alt": "Pirate Riffle",
+            "class": "lazy"
         },
         {
             "order" : 8,
             "imageurl": "images/charge.png",
             "placeholderimageurl": "images/placeHolder.png", 
             "description": "",
-            "alt": "Agitha Charge"
+            "alt": "Agitha Charge",
+            "class": "lazy"
             
         },
         {
@@ -62,49 +70,56 @@
             "imageurl": "images/SoraAndElizabeth.jpg",
             "placeholderimageurl": "images/placeHolder.png", 
             "description": "Photo shoot at Anime Banzai",
-            "alt": "Sora and Elizabeth"
+            "alt": "Sora and Elizabeth",
+            "class": "lazy"
         },
         {
             "order" : 10,
             "imageurl": "images/tug and titania.jpg",
             "placeholderimageurl": "images/placeHolder.png", 
             "description": "Home Photo Shoot",
-            "alt": "Fire Emblem Titiania"
+            "alt": "Fire Emblem Titiania",
+            "class": "lazy"
         },
         {
             "order" : 11,
             "imageurl": "images/TugWave.png",
             "placeholderimageurl": "images/placeHolder.png", 
             "description": "",
-            "alt": "Agitha and Epona"
+            "alt": "Agitha and Epona",
+            "class": "lazy"
         },
         {
             "order" : 12,
             "imageurl": "images/selfie.png",
             "placeholderimageurl": "images/placeHolder.png", 
             "description": "At Salt Lake FanX",
-            "alt": "Group at FanX"
+            "alt": "Group at FanX",
+            "class": "lazy"
         },
         {
             "order" : 13,
             "imageurl": "images/Agitha_W_Tug.png",
             "placeholderimageurl": "images/placeHolder.png", 
             "description": "",
-            "alt": "Agitha with Horse"
+            "alt": "Agitha with Horse",
+            "class": "lazy"
         },
         {
             "order" : 14,
             "imageurl": "images/PuffyCheeks.png",
             "placeholderimageurl": "images/placeHolder.png", 
             "description": "",
-            "alt": "Agitha pout"
+            "alt": "Agitha pout",
+            "class": "lazy"
         },
         {
             "order" : 15,
             "imageurl": "images/SoraWithStormFlag.jpg",
             "placeholderimageurl": "images/placeHolder.png", 
             "description": "",
-            "alt": "Sora with Storm Flag"
+            "alt": "Sora with Storm Flag",
+            "class": "lazy"
         }
         
     ]

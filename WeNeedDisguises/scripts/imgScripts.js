@@ -35,16 +35,13 @@ function displayGallery(image) {
   img.setAttribute('src', image.placeholderimageurl);
   img.setAttribute('data-src', image.imageurl);
   img.setAttribute('alt', image.alt);
-  img.className = 'lazy';
-
-    let imgClass = document.querySelector("img");
-    imgClass.className += "lazy";
+  img.setAttribute('class', image.class);
 
 
   // Add/append
   picture.appendChild(img);
   card.appendChild(picture);
-  
+  img.className = "lazy";
 
   // Add/append the existing HTML div with the cards class with the section(card)
   cards.appendChild(card);
@@ -56,7 +53,7 @@ const imagesToLoad = document.querySelectorAll("img[data-src]");
 
 const imgOptions = {
     threshold: 1, 
-    rootMargin: "0px 0px 60px 0px"
+    rootMargin: "0px 0px 50px 0px"
 };
 
 const loadImages =(image) => {

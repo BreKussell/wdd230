@@ -63,4 +63,10 @@
   }
   
   .prev, .next,.text {font-size: 11px}
+
+  .compare {
+    display: block;
+    width: 90%;
   }
+  }
+
