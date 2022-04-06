@@ -8,49 +8,7 @@ function mobileNav() {
     }
   }
 
-  // image gallery 
-  const requestURL = "../imageGallery.json";
-
-const cards = document.querySelector('.cards');
-
-
-fetch(requestURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-    console.table(jsonObject);  
-    const imageGallery = jsonObject['images'];
-    imageGallery.forEach(displayGallery);
-  });
-
-function displayGallery(image) {
-  // create card elements
-  let card = document.createElement('section');
-  let picture = document.createElement('picture');
-  let img = document.createElement('img');
-
-
-  // Image 
-  img.setAttribute('src', image.placeholderimageurl);
-  img.setAttribute('data-src', image.imageurl);
-  img.setAttribute('alt', image.alt);
-  img.className = 'lazy';
-
-    let imgClass = document.querySelector("img");
-    imgClass.className += "lazy";
-
-
-  // Add/append
-  picture.appendChild(img);
-  card.appendChild(picture);
   
-
-  // Add/append the existing HTML div with the cards class with the section(card)
-  cards.appendChild(card);
-}
-
-
 // Lazy Loading
 const imagesToLoad = document.querySelectorAll("img[data-src]");
 
@@ -81,4 +39,20 @@ if('IntersectionObserver' in window) {
     imagesToLoad.forEach((img) => {
         loadImages(img);
     });
+}
+
+// collapsible
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
 }
