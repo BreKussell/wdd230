@@ -18,7 +18,7 @@ text-align: center;
 /*grid sections__________________________________________________________________________________________________*/
 .container {  display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.25fr 1fr 0.5fr 0.5fr;
+  grid-template-rows: 0.25fr 1fr 0.5fr auto;
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
   gap: 2em 2em;
