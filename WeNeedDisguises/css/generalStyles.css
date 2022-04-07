@@ -221,12 +221,9 @@ figure {
 
 .cards img {
   margin: auto;
-  width: 90%;
+  width: 98%;
 }
 
-.cards{
-  margin: auto;
-}
 
 
 /* Learn______________________________________________________________________________________________*/
@@ -342,9 +339,9 @@ figure img {
   box-shadow: none;
 }
 
-figure img:hover {
+figure img:hover{
   width: 150%;
-  z-index: +1;
+  z-index: +50;
 }
 
 /*Questions______________________________________________________________*/

@@ -22,12 +22,20 @@
   #logoBox,
   footer {
       height: 80px;
-      width: 100%;
+      width: 95%;
   }
   
   #mainLogo {
     display: block;
   }
+
+  /*Img Gallery____________________________________________________/*/
+  .cards {
+    display: block;
+    width: 95%;
+    margin: auto;
+  }
+        
 
 /* grid sections _________________________________________________________________________________________________*/
 .container {  display: grid;
