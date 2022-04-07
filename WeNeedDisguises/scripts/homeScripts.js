@@ -71,12 +71,12 @@ if('IntersectionObserver' in window) {
 
 // Random quote
 function randomQuote() {
-  const url="../quote-data.json";
-  $.getJSON(url, function(response) {
-  var arrayRandom = Math.floor(Math.random() * response.length);
-  $('.modal-title').html(response[arrayRandom].quote);
-  $('.modal-body p').html(response[arrayRandom].citation);      
-}); //end getJSON
+  const quotes = "./quote-data.json";
+  let random = quotes[Math.floor(Math.random() * quotes.length)];
+  quotation.innerText = `“${random.quote}.”`;
+  source.innerText = random.source;
 }
+
 randomQuote();
-document.getElementById("quote").innerHTML = randomQuote;
+
+document.getElementById("quoteButton").addEventListener('click', randomQuote)

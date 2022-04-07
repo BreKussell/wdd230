@@ -270,7 +270,8 @@ figure {
 
 .collapsible.active, 
 .collapsible:hover,
-.ask:hover {
+.ask:hover,
+#quoteButton:hover {
   cursor: pointer;
   background-color: #C3B9EB;
   border: #008080 double 4px;
@@ -372,13 +373,14 @@ form label::after{
     margin: auto;
   }
 
-  .ask {
+  .ask,
+  #quoteButton {
     position: relative;
     margin-left: 5%;
     font-family:"Lucida Handwriting", Cursive;
     font-size: 1em;
     padding: 0.5em;
-    width: 10%;
+    width: auto;
     background-color: #0A0B0A;
     color: #FFFFFF;
   }
