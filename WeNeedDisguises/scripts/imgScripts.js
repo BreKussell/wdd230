@@ -32,10 +32,13 @@ function displayGallery(image) {
 
 
   // Image 
-  img.setAttribute('src', image.placeholderimageurl);
-  img.setAttribute('data-src', image.imageurl);
+ // img.setAttribute('src', image.placeholderimageurl);
+  // img.setAttribute('data-src', image.imageurl);
+  img.setAttribute('src', image.imageurl);
   img.setAttribute('alt', image.alt);
   img.setAttribute('class', image.class);
+  img.setAttribute('loading', 'lazy');
+  
 
 
   // Add/append
